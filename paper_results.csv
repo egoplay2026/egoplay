@@ -1,0 +1,26 @@
+mode,mode_label,method_id,method_label,n_base_ids,n_event_mode_samples,editing_quality,visual_quality,bg_consistency,total
+positive_diverse,Single positive,asahni-029-v2v_step25000_eval_v10__ego4d_v10,EgoEdit,150,150,2.195000,2.211667,2.231667,6.638333
+positive_diverse,Single positive,vlm2_Qwen3-VL-8B-Instruct__editor_asahni-029-v2v_step25000__ego4d_v10,VLM-guided,150,150,1.636667,1.696667,1.760000,5.093333
+positive_diverse,Single positive,getty_event_train_parquet_p4_v7_step20000_eval_v10__ego4d_v10,EgoPlay,150,150,2.670000,2.673333,2.680000,8.023333
+positive_diverse,Single positive,sv3_causal_event_train_parquet_p4_v4_step30000_eval_v10__ego4d_v10,EgoPlay-Causal,150,150,2.591667,2.605000,2.608333,7.805000
+positive_diverse,Single positive,oracle_gt_target,Oracle GT target,150,150,2.790000,2.791667,2.810000,8.391667
+multi_pos_neg,Multiple positive and negative,asahni-029-v2v_step25000_eval_v10__ego4d_v10,EgoEdit,150,150,1.913333,1.947222,1.998889,5.859444
+multi_pos_neg,Multiple positive and negative,vlm2_Qwen3-VL-8B-Instruct__editor_asahni-029-v2v_step25000__ego4d_v10,VLM-guided,150,150,1.575000,1.625000,1.675000,4.875000
+multi_pos_neg,Multiple positive and negative,getty_event_train_parquet_p4_v7_step20000_eval_v10__ego4d_v10,EgoPlay,150,150,2.491667,2.505000,2.525000,7.521667
+multi_pos_neg,Multiple positive and negative,sv3_causal_event_train_parquet_p4_v4_step30000_eval_v10__ego4d_v10,EgoPlay-Causal,150,150,2.457778,2.479444,2.481667,7.418889
+multi_pos_neg,Multiple positive and negative,oracle_gt_target,Oracle GT target,150,150,2.800000,2.793333,2.800000,8.393333
+negative_single,Single negative,asahni-029-v2v_step25000_eval_v10__ego4d_v10,EgoEdit,150,150,2.540000,2.542222,2.544444,7.626667
+negative_single,Single negative,vlm2_Qwen3-VL-8B-Instruct__editor_asahni-029-v2v_step25000__ego4d_v10,VLM-guided,150,150,3.000000,2.993333,3.000000,8.993333
+negative_single,Single negative,getty_event_train_parquet_p4_v7_step20000_eval_v10__ego4d_v10,EgoPlay,150,150,2.776667,2.772222,2.783333,8.332222
+negative_single,Single negative,sv3_causal_event_train_parquet_p4_v4_step30000_eval_v10__ego4d_v10,EgoPlay-Causal,150,150,2.746667,2.735556,2.742222,8.224444
+negative_single,Single negative,oracle_gt_target,Oracle GT target,150,150,3.000000,2.993333,3.000000,8.993333
+multi_negative,Multiple negative,asahni-029-v2v_step25000_eval_v10__ego4d_v10,EgoEdit,150,150,2.403333,2.420000,2.420000,7.243333
+multi_negative,Multiple negative,vlm2_Qwen3-VL-8B-Instruct__editor_asahni-029-v2v_step25000__ego4d_v10,VLM-guided,150,150,3.000000,2.993333,3.000000,8.993333
+multi_negative,Multiple negative,getty_event_train_parquet_p4_v7_step20000_eval_v10__ego4d_v10,EgoPlay,150,150,2.716667,2.710000,2.716667,8.143333
+multi_negative,Multiple negative,sv3_causal_event_train_parquet_p4_v4_step30000_eval_v10__ego4d_v10,EgoPlay-Causal,150,150,2.670000,2.663333,2.670000,8.003333
+multi_negative,Multiple negative,oracle_gt_target,Oracle GT target,150,150,3.000000,2.988889,3.000000,8.988889
+average_event_modes,Average over modes,asahni-029-v2v_step25000_eval_v10__ego4d_v10,EgoEdit,150,600,2.262917,2.280278,2.298750,6.841944
+average_event_modes,Average over modes,vlm2_Qwen3-VL-8B-Instruct__editor_asahni-029-v2v_step25000__ego4d_v10,VLM-guided,150,600,2.302917,2.327083,2.358750,6.988750
+average_event_modes,Average over modes,getty_event_train_parquet_p4_v7_step20000_eval_v10__ego4d_v10,EgoPlay,150,600,2.663750,2.665139,2.676250,8.005139
+average_event_modes,Average over modes,sv3_causal_event_train_parquet_p4_v4_step30000_eval_v10__ego4d_v10,EgoPlay-Causal,150,600,2.616528,2.620833,2.625556,7.862917
+average_event_modes,Average over modes,oracle_gt_target,Oracle GT target,150,600,2.897500,2.891806,2.902500,8.691806
