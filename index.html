@@ -7,13 +7,13 @@
     <title>EgoPlay: Event-Triggered Video Editing for Egocentric Streams</title>
     <meta name="description" content="EgoPlay: Event-Triggered Video Editing for Egocentric Streams">
     <meta name="referrer" content="no-referrer-when-downgrade">
-    <meta name="robots" content="noindex, nofollow">
     <meta content="en_EN" property="og:locale">
     <meta content="website" property="og:type">
     <meta content="EgoPlay" property="og:title">
     <meta content="EgoPlay: Event-Triggered Video Editing for Egocentric Streams" property="og:description">
 
     <link rel="stylesheet" type="text/css" media="all" href="assets/stylesheets/main_free.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <style>
         .hero-placeholder {
@@ -125,8 +125,6 @@
 
         .full-results-cta {
             display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
             justify-content: center;
             margin: 1.4em auto 1em;
         }
@@ -479,25 +477,78 @@
         linear-gradient(200deg, #F8C7D8 15%, #E1C4F4 40%, transparent 80%),
         linear-gradient(45deg, #FFF4D6 0%, #FCEABB 30%, transparent 70%);
         background-blend-mode: overlay, lighten, screen, normal;">
-        <div class="blog-title">
+        <div class="blog-title no-cover" style="text-align: center;">
             <div class="blog-intro">
                 <div>
-                    <h1 class="title" style="font-size: clamp(1.4rem, 3.6vw, 2.8rem); margin-bottom: 0.5em;">
-                        EgoPlay: Event-Triggered Video Editing for Egocentric Streams
-                    </h1>
-                    <p class="author" style="line-height: 1.8; margin-bottom: 0.4em;">
-                        Anonymous Authors
+                    <style>
+                        .author-link {
+                            color: #2a7ab8;
+                            text-decoration: underline;
+                            text-decoration-color: rgba(42, 122, 184, 0.4);
+                            text-underline-offset: 3px;
+                            transition: all 0.2s ease;
+                        }
+                        .author-link:hover {
+                            color: #1a5a8a;
+                            text-decoration-color: #1a5a8a;
+                        }
+                        .author-sup {
+                            font-size: 0.75em;
+                            margin-left: 2px;
+                            color: #555;
+                        }
+                        div.container.blog#first-content div.blog-title.no-cover .blog-intro {
+                            padding-left: 0 !important;
+                            padding-right: 0 !important;
+                        }
+                        @media (min-width: 1100px) {
+                            h1.title.hero-one-line { white-space: nowrap; }
+                        }
+                    </style>
+                    <h1 class="title hero-one-line" style="font-size: clamp(1.1rem, 2.3vw, 2.1rem); text-align: center; margin-bottom: 0.5em;">EgoPlay: Event-Triggered Video Editing for Egocentric Streams</h1>
+                    <p style="margin: 0 0 0.8em 0; padding: 0;">
+                        <span style="display: inline-block; border-radius: 10px; box-shadow: 0px 4px 16px 0px rgba(28, 33, 46, 0.09); padding: 0.45em 1.2em; background: rgba(255, 255, 255, 0.75);">
+                            <img src="assets/figures/siggraph_asia_2026_logo.png" alt="SIGGRAPH Asia 2026, Kuala Lumpur" style="height: 44px; display: block;">
+                        </span>
                     </p>
-                    <p class="abstract" style="text-align: justify;">
-                        <b>EgoPlay</b> introduces <b>event-triggered video editing</b> for egocentric streams:
-                        given a prompt like "when X happens, do Y," the model must <b>detect the trigger</b>, <b>preserve pre-event frames</b>, and <b>edit only the post-event continuation</b>.
-                        We build a <b>106K-pair event-editing dataset</b>, train an end-to-end video diffusion editor, and improve over EgoEdit by <b>25.2%</b> in editing quality.
+                    <p class="author" style="line-height: 1.8; margin-bottom: 0.6em; padding: 0;">
+                        <a href="https://wayne-mai.github.io/" target="_blank" class="author-link">Jinjie Mai</a><sup class="author-sup">1,2</sup>,
+                        <a href="https://guochengqian.github.io/" target="_blank" class="author-link">Gordon Guocheng Qian</a><sup class="author-sup">1</sup>,
+                        <a href="https://www.willimenapace.com/" target="_blank" class="author-link">Willi Menapace</a><sup class="author-sup">1</sup>,
+                        <a href="https://www.linkedin.com/in/arpitsah/" target="_blank" class="author-link">Arpit Sahni</a><sup class="author-sup">1</sup>,
+                        <a href="https://mightychaos.github.io/" target="_blank" class="author-link">Chaoyang Wang</a><sup class="author-sup">1</sup>,
+                        <a href="https://ashmrz.github.io/" target="_blank" class="author-link">Ashkan Mirzaei</a><sup class="author-sup">1</sup>,
+                        <a href="https://runjiali-rl.github.io/" target="_blank" class="author-link">Runjia Li</a><sup class="author-sup">1</sup>,
+                        <a href="https://stulyakov.com/" target="_blank" class="author-link">Sergey Tulyakov</a><sup class="author-sup">1</sup>,
+                        <a href="https://www.bernardghanem.com/" target="_blank" class="author-link">Bernard Ghanem</a><sup class="author-sup">2</sup>,
+                        <a href="http://www.peterwonka.net/" target="_blank" class="author-link">Peter Wonka</a><sup class="author-sup">1,2</sup>,
+                        <a href="https://rameenabdal.github.io/" target="_blank" class="author-link">Rameen Abdal</a><sup class="author-sup">1</sup>
+                    </p>
+                    <p class="affiliations" style="margin-top: 0; margin-bottom: 0.8em; padding: 0; font-size: 0.95em; line-height: 1.0;">
+                        <span style="display: inline-flex; align-items: center; margin-right: 1.5em; white-space: nowrap;">
+                            <img src="assets/figures/Snapchat_logo.svg" alt="Snap Inc." style="height: 24px; margin-right: 6px;">
+                            <sup>1</sup>&nbsp;Snap Inc.
+                        </span>
+                        <span style="display: inline-flex; align-items: center; white-space: nowrap;">
+                            <img src="assets/figures/kaust_square.png" alt="KAUST" style="height: 24px; margin-right: 6px;">
+                            <sup>2</sup>&nbsp;KAUST
+                        </span>
                     </p>
                 </div>
-            </div>
-            <div class="blog-cover">
-                <div class="teaser-cover">
-                    <img src="assets/figures/teaser_v2.png" alt="EgoPlay teaser figure">
+                <div class="info" style="display: flex; justify-content: center;">
+                    <div>
+                        <a href="https://arxiv.org/abs/2607.24560" target="_blank" rel="noopener noreferrer" class="button icon" style="background-color: rgba(255, 255, 255, 0.64); margin-bottom: 0;">Paper (arXiv) <i class="fa-solid fa-file-pdf"></i></a>
+                    </div>
+                </div>
+                <div style="max-width: 100%; margin: 1.5em auto 0 auto;">
+                    <div style="background: rgba(255, 255, 255, 0.9); border-radius: 16px; box-shadow: 0px 4px 16px 0px rgba(28, 33, 46, 0.09); padding: 1.2em; width: 100%; box-sizing: border-box;">
+                        <img src="assets/figures/teaser_v2.png" alt="EgoPlay teaser figure" style="width: 100%; display: block; border-radius: 8px;">
+                    </div>
+                    <p class="caption" style="text-align: center; margin-top: 0.5em;">
+                        <small><b>EgoPlay</b> introduces <b>event-triggered video editing</b> for egocentric streams:
+                        given a prompt like "when X happens, do Y," the model must <b>detect the trigger</b>, <b>preserve pre-event frames</b>, and <b>edit only the post-event continuation</b>.
+                        We build a <b>106K-pair event-editing dataset</b>, train an end-to-end video diffusion editor, and improve over EgoEdit by <b>17.7%</b> in editing quality.</small>
+                    </p>
                 </div>
             </div>
         </div>
@@ -515,7 +566,7 @@
             </div>
             <div class="summary-card">
                 <span>Performance Gain</span>
-                <small>+25.2% editing quality over SOTA EgoEdit</small>
+                <small>+17.7% editing quality over SOTA EgoEdit</small>
             </div>
         </div>
     </div>
@@ -529,9 +580,9 @@
                 <span class="full-results-cta-title">Check full results (150 videos)</span>
                 <span class="full-results-cta-subtitle">All 150 benchmark samples × 4 modes × 4 methods</span>
             </a>
-            <a class="full-results-cta-button" href="https://github.com/egoplay2026-bit/egoplay_page" target="_blank" rel="noopener">
+            <a class="full-results-cta-button" href="https://github.com/egoplay2026/egoplay/blob/main/benchmark.json" target="_blank" rel="noopener">
                 <span class="full-results-cta-title">Download the benchmark ↓</span>
-                <span class="full-results-cta-subtitle">All videos · all method outputs · full annotations (JSON + CSV)</span>
+                <span class="full-results-cta-subtitle">Full annotations (benchmark.json) · all videos · method outputs</span>
             </a>
         </div>
         <div class="comparison-tabs" aria-label="Visual comparison modes">
@@ -542,177 +593,6 @@
         </div>
         <div class="comparison-mode-panel active" data-comparison-panel="positive_diverse">
             <h2>Single Positive</h2>
-            <article class="comparison-sample" data-mode="positive_diverse">
-                <div class="comparison-video-grid" style="--cols: 6">
-                <div class="comparison-video-card">
-                    <h3>Source</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/014bf5e12d3678d30213e2a927e4f69b_event1_p0_positive_diverse/source.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>GT Target</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/014bf5e12d3678d30213e2a927e4f69b_event1_p0_positive_diverse/gt_target.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoEdit</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/014bf5e12d3678d30213e2a927e4f69b_event1_p0_positive_diverse/egoedit.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>VLM-guided</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/014bf5e12d3678d30213e2a927e4f69b_event1_p0_positive_diverse/vlm_guided.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoPlay</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/014bf5e12d3678d30213e2a927e4f69b_event1_p0_positive_diverse/egoplay.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoPlay-Causal</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/014bf5e12d3678d30213e2a927e4f69b_event1_p0_positive_diverse/egoplay_causal.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                </div>
-                <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Only after I open the polythene bag should the crumpled plastic transform into a cluster of translucent jellyfish that float just above my palm, still holding the bag’s shape.</p>
-                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Transform the crumpled plastic into a cluster of translucent jellyfish that float just above the palm, still holding the bag’s shape.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 5 frames (0.00s – 0.31s) &nbsp;&middot;&nbsp; <b>Event:</b> 42 frames (0.31s – 2.94s) &nbsp;&middot;&nbsp; <b>After event:</b> 34 frames (2.94s – 5.06s)</p>
-                </div>
-            </article>
-            <article class="comparison-sample" data-mode="positive_diverse">
-                <div class="comparison-video-grid" style="--cols: 6">
-                <div class="comparison-video-card">
-                    <h3>Source</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="41">
-                            <source src="website_res/visual_comparison/positive_diverse/048377d26df9ff9f217cc4b89b50045d_event0_p2_positive_diverse/source.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>GT Target</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="41">
-                            <source src="website_res/visual_comparison/positive_diverse/048377d26df9ff9f217cc4b89b50045d_event0_p2_positive_diverse/gt_target.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoEdit</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="41">
-                            <source src="website_res/visual_comparison/positive_diverse/048377d26df9ff9f217cc4b89b50045d_event0_p2_positive_diverse/egoedit.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>VLM-guided</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="41">
-                            <source src="website_res/visual_comparison/positive_diverse/048377d26df9ff9f217cc4b89b50045d_event0_p2_positive_diverse/vlm_guided.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoPlay</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="41">
-                            <source src="website_res/visual_comparison/positive_diverse/048377d26df9ff9f217cc4b89b50045d_event0_p2_positive_diverse/egoplay.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoPlay-Causal</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="41">
-                            <source src="website_res/visual_comparison/positive_diverse/048377d26df9ff9f217cc4b89b50045d_event0_p2_positive_diverse/egoplay_causal.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                </div>
-                <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> If and when I place a decoration on the window frame, change the decoration’s material to iridescent mother-of-pearl with fine concentric grooves catching the sunlight exactly as before.</p>
-                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Change the decoration’s material to iridescent mother-of-pearl with fine concentric grooves catching the sunlight exactly as before.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 16 frames (0.00s – 1.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 41 frames (1.00s – 3.56s) &nbsp;&middot;&nbsp; <b>After event:</b> 24 frames (3.56s – 5.06s)</p>
-                </div>
-            </article>
-            <article class="comparison-sample" data-mode="positive_diverse">
-                <div class="comparison-video-grid" style="--cols: 6">
-                <div class="comparison-video-card">
-                    <h3>Source</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="25" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/05746749e131ad71160e92f2102c8303_event3_p1_positive_diverse/source.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>GT Target</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="25" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/05746749e131ad71160e92f2102c8303_event3_p1_positive_diverse/gt_target.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoEdit</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="25" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/05746749e131ad71160e92f2102c8303_event3_p1_positive_diverse/egoedit.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>VLM-guided</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="25" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/05746749e131ad71160e92f2102c8303_event3_p1_positive_diverse/vlm_guided.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoPlay</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="25" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/05746749e131ad71160e92f2102c8303_event3_p1_positive_diverse/egoplay.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoPlay-Causal</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="25" data-event="42">
-                            <source src="website_res/visual_comparison/positive_diverse/05746749e131ad71160e92f2102c8303_event3_p1_positive_diverse/egoplay_causal.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                </div>
-                <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> As soon as I put the rhinestone on the fabric on the table with the pin in my right hand is finished, add a small brown sparrow hopping onto the edge of the white plate, pecking gently at a stray seed near my left thumb.</p>
-                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Add a small brown sparrow hopping onto the edge of the white plate, pecking gently at a stray seed near your left thumb.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 25 frames (0.00s – 1.56s) &nbsp;&middot;&nbsp; <b>Event:</b> 42 frames (1.56s – 4.19s) &nbsp;&middot;&nbsp; <b>After event:</b> 14 frames (4.19s – 5.06s)</p>
-                </div>
-            </article>
             <article class="comparison-sample" data-mode="positive_diverse">
                 <div class="comparison-video-grid" style="--cols: 6">
                 <div class="comparison-video-card">
@@ -765,9 +645,9 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> After you put the hammer on the floor, add swirling indigo runes that glow faintly along the edges of the lawnmower’s orange casing, casting soft pulses on the concrete.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> After you put the hammer on the floor, add swirling indigo runes that glow faintly along the edges of the lawnmower’s orange casing, casting soft pulses on the concrete.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Add swirling indigo runes that glow faintly along the edges of the lawnmower’s orange casing, casting soft pulses on the concrete.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 17 frames (0.00s – 1.06s) &nbsp;&middot;&nbsp; <b>Event:</b> 24 frames (1.06s – 2.56s) &nbsp;&middot;&nbsp; <b>After event:</b> 40 frames (2.56s – 5.06s)</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 17 frames (0.00s &ndash; 1.06s) &nbsp;&middot;&nbsp; <b>Event:</b> 24 frames (1.06s &ndash; 2.56s) &nbsp;&middot;&nbsp; <b>After event:</b> 40 frames (2.56s &ndash; 5.06s)</p>
                 </div>
             </article>
             <article class="comparison-sample" data-mode="positive_diverse">
@@ -775,118 +655,232 @@
                 <div class="comparison-video-card">
                     <h3>Source</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="50">
-                            <source src="website_res/visual_comparison/positive_diverse/07753f48aea2057f7c8ed37a21cafb83_event1_p2_positive_diverse/source.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0beb98a4b2cd7a5722354230f9b4ea9e_event1_p3_positive_diverse/source.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>GT Target</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="50">
-                            <source src="website_res/visual_comparison/positive_diverse/07753f48aea2057f7c8ed37a21cafb83_event1_p2_positive_diverse/gt_target.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0beb98a4b2cd7a5722354230f9b4ea9e_event1_p3_positive_diverse/gt_target.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoEdit</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="50">
-                            <source src="website_res/visual_comparison/positive_diverse/07753f48aea2057f7c8ed37a21cafb83_event1_p2_positive_diverse/egoedit.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0beb98a4b2cd7a5722354230f9b4ea9e_event1_p3_positive_diverse/egoedit.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>VLM-guided</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="50">
-                            <source src="website_res/visual_comparison/positive_diverse/07753f48aea2057f7c8ed37a21cafb83_event1_p2_positive_diverse/vlm_guided.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0beb98a4b2cd7a5722354230f9b4ea9e_event1_p3_positive_diverse/vlm_guided.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoPlay</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="50">
-                            <source src="website_res/visual_comparison/positive_diverse/07753f48aea2057f7c8ed37a21cafb83_event1_p2_positive_diverse/egoplay.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0beb98a4b2cd7a5722354230f9b4ea9e_event1_p3_positive_diverse/egoplay.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoPlay-Causal</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="50">
-                            <source src="website_res/visual_comparison/positive_diverse/07753f48aea2057f7c8ed37a21cafb83_event1_p2_positive_diverse/egoplay_causal.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0beb98a4b2cd7a5722354230f9b4ea9e_event1_p3_positive_diverse/egoplay_causal.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> After I drop the electric iron in the holder, insert a small glass jar of lavender sprigs on the edge of the ironing board’s left side, casting a faint shadow.</p>
-                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Insert a small glass jar of lavender sprigs on the edge of the ironing board’s left side, casting a faint shadow.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 11 frames (0.00s – 0.69s) &nbsp;&middot;&nbsp; <b>Event:</b> 50 frames (0.69s – 3.81s) &nbsp;&middot;&nbsp; <b>After event:</b> 20 frames (3.81s – 5.06s)</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> After the conclusion of picking up a sponge from the counter, add a silver chain-link bracelet to my right wrist, glinting subtly under the sink light with a soft shadow cast onto my forearm.</p>
+                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Add a silver chain-link bracelet to the right wrist, glinting subtly under the sink light with a soft shadow cast onto the forearm.</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 8 frames (0.00s &ndash; 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 32 frames (0.50s &ndash; 2.50s) &nbsp;&middot;&nbsp; <b>After event:</b> 41 frames (2.50s &ndash; 5.06s)</p>
+                </div>
+            </article>
+            <article class="comparison-sample" data-mode="positive_diverse">
+                <div class="comparison-video-grid" style="--cols: 6">
+                <div class="comparison-video-card">
+                    <h3>Source</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="41" data-event="31">
+                            <source src="website_res/visual_comparison/positive_diverse/0ce3edbaa42fc2bea9ba016fd50236ea_event1_p3_positive_diverse/source.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>GT Target</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="41" data-event="31">
+                            <source src="website_res/visual_comparison/positive_diverse/0ce3edbaa42fc2bea9ba016fd50236ea_event1_p3_positive_diverse/gt_target.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoEdit</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="41" data-event="31">
+                            <source src="website_res/visual_comparison/positive_diverse/0ce3edbaa42fc2bea9ba016fd50236ea_event1_p3_positive_diverse/egoedit.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>VLM-guided</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="41" data-event="31">
+                            <source src="website_res/visual_comparison/positive_diverse/0ce3edbaa42fc2bea9ba016fd50236ea_event1_p3_positive_diverse/vlm_guided.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoPlay</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="41" data-event="31">
+                            <source src="website_res/visual_comparison/positive_diverse/0ce3edbaa42fc2bea9ba016fd50236ea_event1_p3_positive_diverse/egoplay.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoPlay-Causal</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="41" data-event="31">
+                            <source src="website_res/visual_comparison/positive_diverse/0ce3edbaa42fc2bea9ba016fd50236ea_event1_p3_positive_diverse/egoplay_causal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                </div>
+                <div class="comparison-meta">
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Upon raising the blade, replace the gravel yard background with a desert canyon at sunset, keeping the machine’s cage and my legs perfectly unchanged in framing and scale.</p>
+                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Replace the gravel yard background with a desert canyon at sunset, keeping the machine’s cage and your legs perfectly unchanged in framing and scale.</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 41 frames (0.00s &ndash; 2.56s) &nbsp;&middot;&nbsp; <b>Event:</b> 31 frames (2.56s &ndash; 4.50s) &nbsp;&middot;&nbsp; <b>After event:</b> 9 frames (4.50s &ndash; 5.06s)</p>
+                </div>
+            </article>
+            <article class="comparison-sample" data-mode="positive_diverse">
+                <div class="comparison-video-grid" style="--cols: 6">
+                <div class="comparison-video-card">
+                    <h3>Source</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="0" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0e4ddd5ae2378b87a7315883b3005c79_event0_p0_positive_diverse/source.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>GT Target</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="0" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0e4ddd5ae2378b87a7315883b3005c79_event0_p0_positive_diverse/gt_target.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoEdit</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="0" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0e4ddd5ae2378b87a7315883b3005c79_event0_p0_positive_diverse/egoedit.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>VLM-guided</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="0" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0e4ddd5ae2378b87a7315883b3005c79_event0_p0_positive_diverse/vlm_guided.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoPlay</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="0" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0e4ddd5ae2378b87a7315883b3005c79_event0_p0_positive_diverse/egoplay.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoPlay-Causal</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="0" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/0e4ddd5ae2378b87a7315883b3005c79_event0_p0_positive_diverse/egoplay_causal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                </div>
+                <div class="comparison-meta">
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Following I click on the tablet, render the entire scene as a vintage comic book with bold halftone dots and hand-inked line work, preserving all objects and positions.</p>
+                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Render the entire scene as a vintage comic book with bold halftone dots and hand-inked line work, preserving all objects and positions.</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 0 frames (0.00s &ndash; 0.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 32 frames (0.00s &ndash; 2.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 49 frames (2.00s &ndash; 5.06s)</p>
+                </div>
+            </article>
+            <article class="comparison-sample" data-mode="positive_diverse">
+                <div class="comparison-video-grid" style="--cols: 6">
+                <div class="comparison-video-card">
+                    <h3>Source</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/1e5d71bf1a8d841f9f9aa223088b06ae_event2_p3_positive_diverse/source.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>GT Target</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/1e5d71bf1a8d841f9f9aa223088b06ae_event2_p3_positive_diverse/gt_target.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoEdit</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/1e5d71bf1a8d841f9f9aa223088b06ae_event2_p3_positive_diverse/egoedit.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>VLM-guided</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/1e5d71bf1a8d841f9f9aa223088b06ae_event2_p3_positive_diverse/vlm_guided.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoPlay</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/1e5d71bf1a8d841f9f9aa223088b06ae_event2_p3_positive_diverse/egoplay.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoPlay-Causal</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="32">
+                            <source src="website_res/visual_comparison/positive_diverse/1e5d71bf1a8d841f9f9aa223088b06ae_event2_p3_positive_diverse/egoplay_causal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                </div>
+                <div class="comparison-meta">
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> As soon as I finish painting a drawing on a piece of paper with my right hand, change the blue wave portion of the sketch to deep burgundy while preserving all shading and line integrity.</p>
+                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Change the blue wave portion of the sketch to deep burgundy while preserving all shading and line integrity.</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 16 frames (0.00s &ndash; 1.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 32 frames (1.00s &ndash; 3.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 33 frames (3.00s &ndash; 5.06s)</p>
                 </div>
             </article>
         </div>
         <div class="comparison-mode-panel" data-comparison-panel="negative_single">
             <h2>Single Negative</h2>
-            <article class="comparison-sample" data-mode="negative_single">
-                <div class="comparison-video-grid" style="--cols: 6">
-                <div class="comparison-video-card">
-                    <h3>Source</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="12" data-event="12">
-                            <source src="website_res/visual_comparison/negative_single/0040b038d99954df985be2cfe68610a5_event14_p1_negative_single/source.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>GT Target</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="12" data-event="12">
-                            <source src="website_res/visual_comparison/negative_single/0040b038d99954df985be2cfe68610a5_event14_p1_negative_single/gt_target.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoEdit</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="12" data-event="12">
-                            <source src="website_res/visual_comparison/negative_single/0040b038d99954df985be2cfe68610a5_event14_p1_negative_single/egoedit.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>VLM-guided</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="12" data-event="12">
-                            <source src="website_res/visual_comparison/negative_single/0040b038d99954df985be2cfe68610a5_event14_p1_negative_single/vlm_guided.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoPlay</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="12" data-event="12">
-                            <source src="website_res/visual_comparison/negative_single/0040b038d99954df985be2cfe68610a5_event14_p1_negative_single/egoplay.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                <div class="comparison-video-card">
-                    <h3>EgoPlay-Causal</h3>
-                    <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="12" data-event="12">
-                            <source src="website_res/visual_comparison/negative_single/0040b038d99954df985be2cfe68610a5_event14_p1_negative_single/egoplay_causal.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-                </div>
-                <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Once I adjust the placement of the power drill on the floor mat, change the shirt to a charcoal-gray fire-resistant jumpsuit with welded seam lines, preserving the sleeve length and shoulder posture.</p>
-                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Change the shirt to a charcoal-gray fire-resistant jumpsuit with welded seam lines, preserving the sleeve length and shoulder posture.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 12 frames (0.00s – 0.75s) &nbsp;&middot;&nbsp; <b>Event:</b> 12 frames (0.75s – 1.50s) &nbsp;&middot;&nbsp; <b>After event:</b> 57 frames (1.50s – 5.06s)</p>
-                </div>
-            </article>
             <article class="comparison-sample" data-mode="negative_single">
                 <div class="comparison-video-grid" style="--cols: 6">
                 <div class="comparison-video-card">
@@ -939,9 +933,9 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> As soon as I adjust my right shoe lace while standing still, add a matte black wristband with a glowing blue pulse line to the left wrist, casting a soft shadow onto the forearm.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> As soon as I adjust my right shoe lace while standing still, add a matte black wristband with a glowing blue pulse line to the left wrist, casting a soft shadow onto the forearm.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Add a matte black wristband with a glowing blue pulse line to the left wrist, casting a soft shadow onto the forearm.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 25 frames (0.50s – 2.06s) &nbsp;&middot;&nbsp; <b>After event:</b> 48 frames (2.06s – 5.06s)</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 8 frames (0.00s &ndash; 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 25 frames (0.50s &ndash; 2.06s) &nbsp;&middot;&nbsp; <b>After event:</b> 48 frames (2.06s &ndash; 5.06s)</p>
                 </div>
             </article>
             <article class="comparison-sample" data-mode="negative_single">
@@ -949,56 +943,56 @@
                 <div class="comparison-video-card">
                     <h3>Source</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="47">
-                            <source src="website_res/visual_comparison/negative_single/04e2cfe6daf3d44dae5f34d55e0c3fda_event14_p0_negative_single/source.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/198eb6f883cc759b56cf965ee0848217_event0_p2_negative_single/source.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>GT Target</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="47">
-                            <source src="website_res/visual_comparison/negative_single/04e2cfe6daf3d44dae5f34d55e0c3fda_event14_p0_negative_single/gt_target.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/198eb6f883cc759b56cf965ee0848217_event0_p2_negative_single/gt_target.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoEdit</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="47">
-                            <source src="website_res/visual_comparison/negative_single/04e2cfe6daf3d44dae5f34d55e0c3fda_event14_p0_negative_single/egoedit.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/198eb6f883cc759b56cf965ee0848217_event0_p2_negative_single/egoedit.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>VLM-guided</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="47">
-                            <source src="website_res/visual_comparison/negative_single/04e2cfe6daf3d44dae5f34d55e0c3fda_event14_p0_negative_single/vlm_guided.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/198eb6f883cc759b56cf965ee0848217_event0_p2_negative_single/vlm_guided.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoPlay</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="47">
-                            <source src="website_res/visual_comparison/negative_single/04e2cfe6daf3d44dae5f34d55e0c3fda_event14_p0_negative_single/egoplay.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/198eb6f883cc759b56cf965ee0848217_event0_p2_negative_single/egoplay.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoPlay-Causal</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="5" data-event="47">
-                            <source src="website_res/visual_comparison/negative_single/04e2cfe6daf3d44dae5f34d55e0c3fda_event14_p0_negative_single/egoplay_causal.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="8" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/198eb6f883cc759b56cf965ee0848217_event0_p2_negative_single/egoplay_causal.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Immediately after I wipe the cutting board with a cloth, change the green capsicum piece&#x27;s material to matte volcanic stone with fine pitted texture, keeping its shape and position intact.</p>
-                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Change the green capsicum piece&#x27;s material to matte volcanic stone with fine pitted texture, keeping its shape and position intact.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 5 frames (0.00s – 0.31s) &nbsp;&middot;&nbsp; <b>Event:</b> 47 frames (0.31s – 3.25s) &nbsp;&middot;&nbsp; <b>After event:</b> 29 frames (3.25s – 5.06s)</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Right after I wipe the engine cover with a rag in my right hand, place a small chrome-plated wrench between the right thumb and index finger, perfectly aligned with the grip of the tool already being held.</p>
+                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Place a small chrome-plated wrench between the right thumb and index finger, perfectly aligned with the grip of the tool already being held.</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 8 frames (0.00s &ndash; 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 48 frames (0.50s &ndash; 3.50s) &nbsp;&middot;&nbsp; <b>After event:</b> 25 frames (3.50s &ndash; 5.06s)</p>
                 </div>
             </article>
             <article class="comparison-sample" data-mode="negative_single">
@@ -1006,56 +1000,56 @@
                 <div class="comparison-video-card">
                     <h3>Source</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="30">
-                            <source src="website_res/visual_comparison/negative_single/081bd0b52585a88901f22c6b805a6a15_event0_p0_negative_single/source.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="17">
+                            <source src="website_res/visual_comparison/negative_single/1abfb19d93133bb9f407cc7a60b45b7d_event1_p3_negative_single/source.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>GT Target</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="30">
-                            <source src="website_res/visual_comparison/negative_single/081bd0b52585a88901f22c6b805a6a15_event0_p0_negative_single/gt_target.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="17">
+                            <source src="website_res/visual_comparison/negative_single/1abfb19d93133bb9f407cc7a60b45b7d_event1_p3_negative_single/gt_target.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoEdit</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="30">
-                            <source src="website_res/visual_comparison/negative_single/081bd0b52585a88901f22c6b805a6a15_event0_p0_negative_single/egoedit.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="17">
+                            <source src="website_res/visual_comparison/negative_single/1abfb19d93133bb9f407cc7a60b45b7d_event1_p3_negative_single/egoedit.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>VLM-guided</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="30">
-                            <source src="website_res/visual_comparison/negative_single/081bd0b52585a88901f22c6b805a6a15_event0_p0_negative_single/vlm_guided.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="17">
+                            <source src="website_res/visual_comparison/negative_single/1abfb19d93133bb9f407cc7a60b45b7d_event1_p3_negative_single/vlm_guided.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoPlay</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="30">
-                            <source src="website_res/visual_comparison/negative_single/081bd0b52585a88901f22c6b805a6a15_event0_p0_negative_single/egoplay.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="17">
+                            <source src="website_res/visual_comparison/negative_single/1abfb19d93133bb9f407cc7a60b45b7d_event1_p3_negative_single/egoplay.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoPlay-Causal</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="30">
-                            <source src="website_res/visual_comparison/negative_single/081bd0b52585a88901f22c6b805a6a15_event0_p0_negative_single/egoplay_causal.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="16" data-event="17">
+                            <source src="website_res/visual_comparison/negative_single/1abfb19d93133bb9f407cc7a60b45b7d_event1_p3_negative_single/egoplay_causal.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> When I adjust the strap of my shoe, transform the toy disc in my right hand into polished obsidian with subtle metallic flecks, preserving its exact shape and position.</p>
-                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Transform the toy disc in my right hand into polished obsidian with subtle metallic flecks, preserving its exact shape and position.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 18 frames (0.00s – 1.12s) &nbsp;&middot;&nbsp; <b>Event:</b> 30 frames (1.12s – 3.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 33 frames (3.00s – 5.06s)</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Once I wipe the kitchen cabinet door with the wet wipe, transform the floor tiles into polished river stone with wet sheen and subtle mineral veining, keeping their size, shape, and arrangement identical.</p>
+                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Transform the floor tiles into polished river stone with wet sheen and subtle mineral veining, keeping their size, shape, and arrangement identical.</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 16 frames (0.00s &ndash; 1.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 17 frames (1.00s &ndash; 2.06s) &nbsp;&middot;&nbsp; <b>After event:</b> 48 frames (2.06s &ndash; 5.06s)</p>
                 </div>
             </article>
             <article class="comparison-sample" data-mode="negative_single">
@@ -1063,56 +1057,113 @@
                 <div class="comparison-video-card">
                     <h3>Source</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="45">
-                            <source src="website_res/visual_comparison/negative_single/082e84a3decf5245a2c97f9fda61254c_event1_p1_negative_single/source.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="4" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/24ec4a847dc44db3147646339fae2d01_event0_p3_negative_single/source.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>GT Target</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="45">
-                            <source src="website_res/visual_comparison/negative_single/082e84a3decf5245a2c97f9fda61254c_event1_p1_negative_single/gt_target.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="4" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/24ec4a847dc44db3147646339fae2d01_event0_p3_negative_single/gt_target.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoEdit</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="45">
-                            <source src="website_res/visual_comparison/negative_single/082e84a3decf5245a2c97f9fda61254c_event1_p1_negative_single/egoedit.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="4" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/24ec4a847dc44db3147646339fae2d01_event0_p3_negative_single/egoedit.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>VLM-guided</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="45">
-                            <source src="website_res/visual_comparison/negative_single/082e84a3decf5245a2c97f9fda61254c_event1_p1_negative_single/vlm_guided.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="4" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/24ec4a847dc44db3147646339fae2d01_event0_p3_negative_single/vlm_guided.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoPlay</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="45">
-                            <source src="website_res/visual_comparison/negative_single/082e84a3decf5245a2c97f9fda61254c_event1_p1_negative_single/egoplay.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="4" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/24ec4a847dc44db3147646339fae2d01_event0_p3_negative_single/egoplay.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 <div class="comparison-video-card">
                     <h3>EgoPlay-Causal</h3>
                     <div class="comparison-video-wrap">
-                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="18" data-event="45">
-                            <source src="website_res/visual_comparison/negative_single/082e84a3decf5245a2c97f9fda61254c_event1_p1_negative_single/egoplay_causal.mp4" type="video/mp4">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="4" data-event="48">
+                            <source src="website_res/visual_comparison/negative_single/24ec4a847dc44db3147646339fae2d01_event0_p3_negative_single/egoplay_causal.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Once I set the tablet on the coffee table beside the couch, add faint glowing blue circuit-like energy pulses radiating from the tablet’s edges, softly illuminating the denim fabric and casting subtle electric辉光 on the pillow beside it.</p>
-                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Add faint glowing blue circuit-like energy pulses radiating from the tablet’s edges, softly illuminating the denim fabric and casting subtle electric辉光 on the pillow beside it.</p>
-                <p class="caption comparison-frames"><b>Before event:</b> 18 frames (0.00s – 1.12s) &nbsp;&middot;&nbsp; <b>Event:</b> 45 frames (1.12s – 3.94s) &nbsp;&middot;&nbsp; <b>After event:</b> 18 frames (3.94s – 5.06s)</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> When I pick up the green eraser and rub out a small section of the drawing, add a thin ring of rotating celestial glyphs hovering just above the paper, casting soft indigo shadows onto the sketches below.</p>
+                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Add a thin ring of rotating celestial glyphs hovering just above the paper, casting soft indigo shadows onto the sketches below.</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 4 frames (0.00s &ndash; 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 48 frames (0.25s &ndash; 3.25s) &nbsp;&middot;&nbsp; <b>After event:</b> 29 frames (3.25s &ndash; 5.06s)</p>
+                </div>
+            </article>
+            <article class="comparison-sample" data-mode="negative_single">
+                <div class="comparison-video-grid" style="--cols: 6">
+                <div class="comparison-video-card">
+                    <h3>Source</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="12">
+                            <source src="website_res/visual_comparison/negative_single/713637d97bedf7a84d4895e6e2afda01_event1_p2_negative_single/source.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>GT Target</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="12">
+                            <source src="website_res/visual_comparison/negative_single/713637d97bedf7a84d4895e6e2afda01_event1_p2_negative_single/gt_target.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoEdit</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="12">
+                            <source src="website_res/visual_comparison/negative_single/713637d97bedf7a84d4895e6e2afda01_event1_p2_negative_single/egoedit.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>VLM-guided</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="12">
+                            <source src="website_res/visual_comparison/negative_single/713637d97bedf7a84d4895e6e2afda01_event1_p2_negative_single/vlm_guided.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoPlay</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="12">
+                            <source src="website_res/visual_comparison/negative_single/713637d97bedf7a84d4895e6e2afda01_event1_p2_negative_single/egoplay.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="comparison-video-card">
+                    <h3>EgoPlay-Causal</h3>
+                    <div class="comparison-video-wrap">
+                        <video class="comparison-video" autoplay muted loop playsinline controls preload="metadata" data-fps="16.0" data-before="11" data-event="12">
+                            <source src="website_res/visual_comparison/negative_single/713637d97bedf7a84d4895e6e2afda01_event1_p2_negative_single/egoplay_causal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                </div>
+                <div class="comparison-meta">
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> After I adjust the phone screen brightness, add a ginger tabby kitten briefly batting at the loose end of the yarn near the right hand, its paw lightly brushing the fabric with soft fur detail and correct scale.</p>
+                    <p class="caption comparison-prompt"><b>GT edit prompt:</b> Add a ginger tabby kitten briefly batting at the loose end of the yarn near the right hand, its paw lightly brushing the fabric with soft fur detail and correct scale.</p>
+                <p class="caption comparison-frames"><b>Before event:</b> 11 frames (0.00s &ndash; 0.69s) &nbsp;&middot;&nbsp; <b>Event:</b> 12 frames (0.69s &ndash; 1.44s) &nbsp;&middot;&nbsp; <b>After event:</b> 58 frames (1.44s &ndash; 5.06s)</p>
                 </div>
             </article>
         </div>
@@ -1170,7 +1221,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> When I open the cabinet door below the sink, after the person turns on the faucet, a silver chain-link bracelet appears on the right wrist, the tray changes to a polished marble surface, and raindrops begin to streak down the window behind the sink. After the conclusion of picking up a sponge from the counter, add a silver chain-link bracelet to my right wrist, glinting subtly under the sink light with a soft shadow cast onto my forearm. Once I adjust the position of the dish rack beside the sink, after the person washes the tray, the yellow sponge disappears completely from the countertop, leaving no trace behind.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> When I open the cabinet door below the sink, after the person turns on the faucet, a silver chain-link bracelet appears on the right wrist, the tray changes to a polished marble surface, and raindrops begin to streak down the window behind the sink. After the conclusion of picking up a sponge from the counter, add a silver chain-link bracelet to my right wrist, glinting subtly under the sink light with a soft shadow cast onto my forearm. Once I adjust the position of the dish rack beside the sink, after the person washes the tray, the yellow sponge disappears completely from the countertop, leaving no trace behind.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Add a silver chain-link bracelet to the right wrist, glinting subtly under the sink light with a soft shadow cast onto the forearm.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 32 frames (0.50s – 2.50s) &nbsp;&middot;&nbsp; <b>After event:</b> 41 frames (2.50s – 5.06s)</p>
                 </div>
@@ -1227,7 +1278,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Once I pick up the screwdriver and place it on the ground, transform the caliper bracket into a hollow ceramic mask shaped like a fox, maintaining its size and position in the hands with a matte finish and painted eyes. Once I have finished turning the caliper bracket with both hands, replace it with a hollow ceramic mask shaped like a fox, same size and held in my hands, with matte texture and painted eyes.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Once I pick up the screwdriver and place it on the ground, transform the caliper bracket into a hollow ceramic mask shaped like a fox, maintaining its size and position in the hands with a matte finish and painted eyes. Once I have finished turning the caliper bracket with both hands, replace it with a hollow ceramic mask shaped like a fox, same size and held in my hands, with matte texture and painted eyes.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Replace the caliper bracket with a hollow ceramic mask shaped like a fox, same size and held in my hands, with matte texture and painted eyes.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 11 frames (0.00s – 0.69s) &nbsp;&middot;&nbsp; <b>Event:</b> 50 frames (0.69s – 3.81s) &nbsp;&middot;&nbsp; <b>After event:</b> 20 frames (3.81s – 5.06s)</p>
                 </div>
@@ -1284,7 +1335,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Immediately after I wipe dust off the tablet screen with my thumb, add swirling golden particles forming a soft aura around the tablet, enhancing the visual energy without altering any objects. Following I click on the tablet, render the entire scene as a vintage comic book with bold halftone dots and hand-inked line work, preserving all objects and positions.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Immediately after I wipe dust off the tablet screen with my thumb, add swirling golden particles forming a soft aura around the tablet, enhancing the visual energy without altering any objects. Following I click on the tablet, render the entire scene as a vintage comic book with bold halftone dots and hand-inked line work, preserving all objects and positions.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Render the entire scene as a vintage comic book with bold halftone dots and hand-inked line work, preserving all objects and positions.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 0 frames (0.00s – 0.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 32 frames (0.00s – 2.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 49 frames (2.00s – 5.06s)</p>
                 </div>
@@ -1341,7 +1392,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Right after I put the washer on the nut, change the yellow wheel rim to matte volcanic rock with faint glowing fissures, preserving its shape and position exactly. Immediately after I adjust the position of the pliers on the metal surface, remove the yellow cap from the red workbench, seamlessly filling the space with the underlying surface texture. When I touch the yellow cap without picking it up, transform the metallic hub into a hollow, glowing crystal structure with soft light emanating from within, maintaining the same position and scale. After I shift the power drill sideways on the workbench, change the environment to a light drizzle such that raindrops gently form on the tire and workbench, with subtle wet reflections on all surfaces.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Right after I put the washer on the nut, change the yellow wheel rim to matte volcanic rock with faint glowing fissures, preserving its shape and position exactly. Immediately after I adjust the position of the pliers on the metal surface, remove the yellow cap from the red workbench, seamlessly filling the space with the underlying surface texture. When I touch the yellow cap without picking it up, transform the metallic hub into a hollow, glowing crystal structure with soft light emanating from within, maintaining the same position and scale. After I shift the power drill sideways on the workbench, change the environment to a light drizzle such that raindrops gently form on the tire and workbench, with subtle wet reflections on all surfaces.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Change the yellow wheel rim to matte volcanic rock with faint glowing fissures, preserving its shape and position exactly.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 52 frames (0.50s – 3.75s) &nbsp;&middot;&nbsp; <b>After event:</b> 21 frames (3.75s – 5.06s)</p>
                 </div>
@@ -1398,7 +1449,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Right after I lift the mat and clean the tiles underneath it, add a small black trash bin beside the door frame. After I place the wet wipe on the floor, transform the floor tiles into polished river stone with wet sheen and subtle mineral veining, keeping their size, shape, and arrangement identical.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Right after I lift the mat and clean the tiles underneath it, add a small black trash bin beside the door frame. After I place the wet wipe on the floor, transform the floor tiles into polished river stone with wet sheen and subtle mineral veining, keeping their size, shape, and arrangement identical.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Transform the floor tiles into polished river stone with wet sheen and subtle mineral veining, keeping their size, shape, and arrangement identical.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 16 frames (0.00s – 1.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 17 frames (1.00s – 2.06s) &nbsp;&middot;&nbsp; <b>After event:</b> 48 frames (2.06s – 5.06s)</p>
                 </div>
@@ -1458,7 +1509,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Immediately after I wipe my forehead with the back of my left hand, restyle the entire image as a high-contrast charcoal sketch with heavy smudged shadows and white highlight strokes, preserving all spatial details. Immediately after I adjust the strap of my backpack on my right shoulder, after the scene, replace the concrete surface with polished marble and add streaks of golden light across the pavement.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Immediately after I wipe my forehead with the back of my left hand, restyle the entire image as a high-contrast charcoal sketch with heavy smudged shadows and white highlight strokes, preserving all spatial details. Immediately after I adjust the strap of my backpack on my right shoulder, after the scene, replace the concrete surface with polished marble and add streaks of golden light across the pavement.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Restyle the entire image as a high-contrast charcoal sketch with heavy smudged shadows and white highlight strokes, preserving all spatial details.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 26 frames (0.50s – 2.12s) &nbsp;&middot;&nbsp; <b>After event:</b> 47 frames (2.12s – 5.06s)</p>
                 </div>
@@ -1515,7 +1566,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> After I pick up a white box from the floor and place it on the mower deck, change the lighting to simulate late evening with softer, longer shadows and a warm golden glow from the garage lights. Right after I wipe the engine cover with a rag in my right hand, place a small chrome-plated wrench between the right thumb and index finger, perfectly aligned with the grip of the tool already being held.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> After I pick up a white box from the floor and place it on the mower deck, change the lighting to simulate late evening with softer, longer shadows and a warm golden glow from the garage lights. Right after I wipe the engine cover with a rag in my right hand, place a small chrome-plated wrench between the right thumb and index finger, perfectly aligned with the grip of the tool already being held.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Place a small chrome-plated wrench between the right thumb and index finger, perfectly aligned with the grip of the tool already being held.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 48 frames (0.50s – 3.50s) &nbsp;&middot;&nbsp; <b>After event:</b> 25 frames (3.50s – 5.06s)</p>
                 </div>
@@ -1572,7 +1623,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Immediately after I wipe the table with a paper towel, change the man&#x27;s green shirt to a navy blue sweater with a ribbed collar, keeping the baby and posture unchanged. Once I pick up the photo of the child and place it on the notebook, transform the paint brush into a cluster of thin, glowing amber vines that still hold the same shape and position in my hand. Right after I move the jar of water to the left side of the table, replace the small photograph on the table with a folded letter tied with a string, keeping its position and orientation.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Immediately after I wipe the table with a paper towel, change the man&#x27;s green shirt to a navy blue sweater with a ribbed collar, keeping the baby and posture unchanged. Once I pick up the photo of the child and place it on the notebook, transform the paint brush into a cluster of thin, glowing amber vines that still hold the same shape and position in my hand. Right after I move the jar of water to the left side of the table, replace the small photograph on the table with a folded letter tied with a string, keeping its position and orientation.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Transform the paint brush into a cluster of thin, glowing amber vines that still hold the same shape and position in my hand.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 50 frames (0.00s – 3.12s) &nbsp;&middot;&nbsp; <b>Event:</b> 20 frames (3.12s – 4.38s) &nbsp;&middot;&nbsp; <b>After event:</b> 11 frames (4.38s – 5.06s)</p>
                 </div>
@@ -1629,7 +1680,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> Once I adjust the clip holding the white paper around the drawing, add a small black cat sitting near the left edge of the drawing, with its tail slightly brushing the paper&#x27;s surface. After I lift the phone from the table to check a reference image, change the blue wave portion of the sketch to deep burgundy while preserving all shading and line integrity.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> Once I adjust the clip holding the white paper around the drawing, add a small black cat sitting near the left edge of the drawing, with its tail slightly brushing the paper&#x27;s surface. After I lift the phone from the table to check a reference image, change the blue wave portion of the sketch to deep burgundy while preserving all shading and line integrity.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Change the blue wave portion of the sketch to deep burgundy while preserving all shading and line integrity.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 16 frames (0.00s – 1.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 32 frames (1.00s – 3.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 33 frames (3.00s – 5.06s)</p>
                 </div>
@@ -1686,7 +1737,7 @@
                 </div>
                 </div>
                 <div class="comparison-meta">
-                    <p class="caption comparison-prompt"><b>Event prompt:</b> After I pull the needle through the fabric to continue stitching, transform the fallen thread into a cluster of tiny copper-wire coils that glint softly under the ambient light, maintaining its original position on the patterned fabric. As soon as I adjust the cross-stitch pattern paper with my left hand, change the indoor lighting to dim, mimic an overcast day with soft bluish-white ambient light and no direct shadows. Immediately after I reposition the embroidery block to align it with the design, transform the person into a cyborg with visible metallic joints and a faint glow along the forearm, keeping the same posture and hand movements.</p>
+                    <p class="caption comparison-prompt"><b>Event conditioned edit prompt:</b> After I pull the needle through the fabric to continue stitching, transform the fallen thread into a cluster of tiny copper-wire coils that glint softly under the ambient light, maintaining its original position on the patterned fabric. As soon as I adjust the cross-stitch pattern paper with my left hand, change the indoor lighting to dim, mimic an overcast day with soft bluish-white ambient light and no direct shadows. Immediately after I reposition the embroidery block to align it with the design, transform the person into a cyborg with visible metallic joints and a faint glow along the forearm, keeping the same posture and hand movements.</p>
                     <p class="caption comparison-prompt"><b>GT edit prompt:</b> Transform the fallen thread into a cluster of tiny copper-wire coils that glint softly under the ambient light, maintaining its original position on the patterned fabric.</p>
                 <p class="caption comparison-frames"><b>Before event:</b> 34 frames (0.00s – 2.12s) &nbsp;&middot;&nbsp; <b>Event:</b> 25 frames (2.12s – 3.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 22 frames (3.69s – 5.06s)</p>
                 </div>
@@ -2046,9 +2097,24 @@
 
 
 
+    <div class="container blog main white" id="citation">
+        <h1>Citation</h1>
+        <pre style="background:#f5f5f7; border-radius:10px; padding:1.1em 1.3em; overflow-x:auto; font-size:0.85em; line-height:1.5;"><code>@misc{mai2026egoplay,
+  title         = {EgoPlay: Event-Triggered Video Editing for Egocentric Streams},
+  author        = {Jinjie Mai and Gordon Guocheng Qian and Willi Menapace and Arpit Sahni
+                   and Chaoyang Wang and Ashkan Mirzaei and Runjia Li and Sergey Tulyakov
+                   and Bernard Ghanem and Peter Wonka and Rameen Abdal},
+  year          = {2026},
+  eprint        = {2607.24560},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  url           = {https://arxiv.org/abs/2607.24560}
+}</code></pre>
+    </div>
+
     <footer>
         <div class="container">
-            <p>EgoPlay</p>
+            <p>EgoPlay &mdash; SIGGRAPH Asia 2026 Conference Paper</p>
         </div>
     </footer>
 </body>

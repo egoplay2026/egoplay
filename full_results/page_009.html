@@ -20,7 +20,7 @@
         </nav>
         <p class="fr-legend">Each unit shows the 4 event-trigger modes for one Ego4D source clip. Inside each mode row: source, GT target, and the 4 method outputs, each annotated with its own VLM scores (Edit quality, Visual quality, BG consistency, and Total). The red border highlights the event window; use "Go to event start" to jump a video to its trigger frame.</p>
         <p class="fr-download" style="text-align:center;margin:0.6em 0 0;font-size:0.92em;">
-            Videos on this page are compressed for the web. <a href="https://github.com/egoplay2026-bit/egoplay_page" target="_blank" rel="noopener"><b>Download the full benchmark &darr;</b></a> &mdash; all videos, method outputs, and annotations (JSON + CSV).
+            Videos on this page are compressed for the web. <a href="https://github.com/egoplay2026/egoplay/blob/main/benchmark.json" target="_blank" rel="noopener"><b>Download the full benchmark &darr;</b></a> &mdash; all videos, method outputs, and annotations (JSON + CSV).
         </p>
     </header>
     <main class="fr-main">
@@ -94,7 +94,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I bend down, bathe the scene in warm late-afternoon golden hour light that catches the dust motes above the soil and casts long, sharp shadows from the wooden poles.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I bend down, bathe the scene in warm late-afternoon golden hour light that catches the dust motes above the soil and casts long, sharp shadows from the wooden poles.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I bend down</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 60 frames (0.25s – 4.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 17 frames (4.00s – 5.06s)</p>
                 </div>
             </div>
@@ -163,7 +164,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I pick up a stone from the soil near the base of the plant, bathe the scene in warm late-afternoon golden hour light that catches the dust motes above the soil and casts long, sharp shadows from the wooden poles.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I pick up a stone from the soil near the base of the plant, bathe the scene in warm late-afternoon golden hour light that catches the dust motes above the soil and casts long, sharp shadows from the wooden poles.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I bend down</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 60 frames (0.25s – 4.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 17 frames (4.00s – 5.06s)</p>
                 </div>
             </div>
@@ -232,7 +234,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I adjust the position of the wooden stake next to the vine, add a pair of sturdy leather gardening gloves to the hands, with natural tension on the fingers and snug fit over the wrists. After I bend down, bathe the scene in warm late-afternoon golden hour light that catches the dust motes above the soil and casts long, sharp shadows from the wooden poles.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I adjust the position of the wooden stake next to the vine, add a pair of sturdy leather gardening gloves to the hands, with natural tension on the fingers and snug fit over the wrists. After I bend down, bathe the scene in warm late-afternoon golden hour light that catches the dust motes above the soil and casts long, sharp shadows from the wooden poles.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I bend down</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 60 frames (0.25s – 4.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 17 frames (4.00s – 5.06s)</p>
                 </div>
             </div>
@@ -301,7 +304,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I adjust the position of the wooden stake next to the vine, add a pair of sturdy leather gardening gloves to the hands, with natural tension on the fingers and snug fit over the wrists. When I pick up a stone from the soil near the base of the plant, bathe the scene in warm late-afternoon golden hour light that catches the dust motes above the soil and casts long, sharp shadows from the wooden poles.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I adjust the position of the wooden stake next to the vine, add a pair of sturdy leather gardening gloves to the hands, with natural tension on the fingers and snug fit over the wrists. When I pick up a stone from the soil near the base of the plant, bathe the scene in warm late-afternoon golden hour light that catches the dust motes above the soil and casts long, sharp shadows from the wooden poles.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I bend down</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 60 frames (0.25s – 4.00s) &nbsp;&middot;&nbsp; <b>After event:</b> 17 frames (4.00s – 5.06s)</p>
                 </div>
             </div>
@@ -376,7 +380,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After detecting you typing on the laptop, replace the background with a dimly lit bookstore aisle lined with leather-bound books, keeping your hands and the table unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After detecting you typing on the laptop, replace the background with a dimly lit bookstore aisle lined with leather-bound books, keeping your hands and the table unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I type on the laptop</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 59 frames (0.25s – 3.94s) &nbsp;&middot;&nbsp; <b>After event:</b> 18 frames (3.94s – 5.06s)</p>
                 </div>
             </div>
@@ -445,7 +450,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I pick up the blue mug from the table, replace the background with a dimly lit bookstore aisle lined with leather-bound books, keeping my hands and the table unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I pick up the blue mug from the table, replace the background with a dimly lit bookstore aisle lined with leather-bound books, keeping my hands and the table unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I type on the laptop</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 59 frames (0.25s – 3.94s) &nbsp;&middot;&nbsp; <b>After event:</b> 18 frames (3.94s – 5.06s)</p>
                 </div>
             </div>
@@ -514,7 +520,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I adjust the position of the potted plant on the floor, add a faint glow around the edges of the laptop screen with floating particles resembling stardust near the keyboard. When I unplug the charger from the laptop, place a single open book with worn pages on the table near the cup, keeping all other objects in their original positions. After detecting you typing on the laptop, replace the background with a dimly lit bookstore aisle lined with leather-bound books, keeping your hands and the table unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I adjust the position of the potted plant on the floor, add a faint glow around the edges of the laptop screen with floating particles resembling stardust near the keyboard. When I unplug the charger from the laptop, place a single open book with worn pages on the table near the cup, keeping all other objects in their original positions. After detecting you typing on the laptop, replace the background with a dimly lit bookstore aisle lined with leather-bound books, keeping your hands and the table unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I type on the laptop</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 59 frames (0.25s – 3.94s) &nbsp;&middot;&nbsp; <b>After event:</b> 18 frames (3.94s – 5.06s)</p>
                 </div>
             </div>
@@ -583,7 +590,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I adjust the position of the potted plant on the floor, add a faint glow around the edges of the laptop screen with floating particles resembling stardust near the keyboard. When I unplug the charger from the laptop, place a single open book with worn pages on the table near the cup, keeping all other objects in their original positions. When I pick up the blue mug from the table, replace the background with a dimly lit bookstore aisle lined with leather-bound books, keeping my hands and the table unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I adjust the position of the potted plant on the floor, add a faint glow around the edges of the laptop screen with floating particles resembling stardust near the keyboard. When I unplug the charger from the laptop, place a single open book with worn pages on the table near the cup, keeping all other objects in their original positions. When I pick up the blue mug from the table, replace the background with a dimly lit bookstore aisle lined with leather-bound books, keeping my hands and the table unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I type on the laptop</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 59 frames (0.25s – 3.94s) &nbsp;&middot;&nbsp; <b>After event:</b> 18 frames (3.94s – 5.06s)</p>
                 </div>
             </div>
@@ -658,7 +666,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Do adding a small gray mouse perched on the edge of the black tray, sniffing toward the dough, once I take the vegetables with my hand is done.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Do adding a small gray mouse perched on the edge of the black tray, sniffing toward the dough, once I take the vegetables with my hand is done.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I take the vegetables with my hand</p>
                 <p class="caption fr-frames"><b>Before event:</b> 42 frames (0.00s – 2.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 17 frames (2.62s – 3.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 22 frames (3.69s – 5.06s)</p>
                 </div>
             </div>
@@ -727,7 +736,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I lift the jar of olive oil from the counter, add a small gray mouse perched on the edge of the black tray, sniffing toward the dough.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I lift the jar of olive oil from the counter, add a small gray mouse perched on the edge of the black tray, sniffing toward the dough.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I take the vegetables with my hand</p>
                 <p class="caption fr-frames"><b>Before event:</b> 42 frames (0.00s – 2.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 17 frames (2.62s – 3.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 22 frames (3.69s – 5.06s)</p>
                 </div>
             </div>
@@ -796,7 +806,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Do adding a small gray mouse perched on the edge of the black tray, sniffing toward the dough, once I take the vegetables with my hand is done. When I adjust the plastic bag under the flour container, change the material of the metal tray to shiny polished silver, keeping the same shape and position on the countertop.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Do adding a small gray mouse perched on the edge of the black tray, sniffing toward the dough, once I take the vegetables with my hand is done. When I adjust the plastic bag under the flour container, change the material of the metal tray to shiny polished silver, keeping the same shape and position on the countertop.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I take the vegetables with my hand</p>
                 <p class="caption fr-frames"><b>Before event:</b> 42 frames (0.00s – 2.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 17 frames (2.62s – 3.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 22 frames (3.69s – 5.06s)</p>
                 </div>
             </div>
@@ -865,7 +876,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I lift the jar of olive oil from the counter, add a small gray mouse perched on the edge of the black tray, sniffing toward the dough. When I adjust the plastic bag under the flour container, change the material of the metal tray to shiny polished silver, keeping the same shape and position on the countertop.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I lift the jar of olive oil from the counter, add a small gray mouse perched on the edge of the black tray, sniffing toward the dough. When I adjust the plastic bag under the flour container, change the material of the metal tray to shiny polished silver, keeping the same shape and position on the countertop.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I take the vegetables with my hand</p>
                 <p class="caption fr-frames"><b>Before event:</b> 42 frames (0.00s – 2.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 17 frames (2.62s – 3.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 22 frames (3.69s – 5.06s)</p>
                 </div>
             </div>
@@ -940,7 +952,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Do adding a small gray dove resting on the windowsill just behind the glass jar, tilting its head toward the bin, once I scoop the contents from the bowl is done.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Do adding a small gray dove resting on the windowsill just behind the glass jar, tilting its head toward the bin, once I scoop the contents from the bowl is done.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I scoop the contents from the bowl</p>
                 <p class="caption fr-frames"><b>Before event:</b> 53 frames (0.00s – 3.31s) &nbsp;&middot;&nbsp; <b>Event:</b> 21 frames (3.31s – 4.62s) &nbsp;&middot;&nbsp; <b>After event:</b> 7 frames (4.62s – 5.06s)</p>
                 </div>
             </div>
@@ -1009,7 +1022,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I pick up the glass jar from the windowsill, add a small gray dove resting on the windowsill just behind the glass jar, tilting its head toward the bin.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I pick up the glass jar from the windowsill, add a small gray dove resting on the windowsill just behind the glass jar, tilting its head toward the bin.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I scoop the contents from the bowl</p>
                 <p class="caption fr-frames"><b>Before event:</b> 53 frames (0.00s – 3.31s) &nbsp;&middot;&nbsp; <b>Event:</b> 21 frames (3.31s – 4.62s) &nbsp;&middot;&nbsp; <b>After event:</b> 7 frames (4.62s – 5.06s)</p>
                 </div>
             </div>
@@ -1078,7 +1092,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I close the plastic container with the lid, change the color of the plastic bowl to deep forest green while preserving its shape and material texture. As soon as I wipe the countertop with the pink cloth, shift the scene to early evening twilight with dim blue ambient light outside the window and a soft glow from the room&#x27;s interior lighting. Do adding a small gray dove resting on the windowsill just behind the glass jar, tilting its head toward the bin, once I scoop the contents from the bowl is done. Right after I turn on the tap and run water into the sink, replace the smooth surface of the baking jar with a fine woven basket texture while maintaining its shape and size.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I close the plastic container with the lid, change the color of the plastic bowl to deep forest green while preserving its shape and material texture. As soon as I wipe the countertop with the pink cloth, shift the scene to early evening twilight with dim blue ambient light outside the window and a soft glow from the room&#x27;s interior lighting. Do adding a small gray dove resting on the windowsill just behind the glass jar, tilting its head toward the bin, once I scoop the contents from the bowl is done. Right after I turn on the tap and run water into the sink, replace the smooth surface of the baking jar with a fine woven basket texture while maintaining its shape and size.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I scoop the contents from the bowl</p>
                 <p class="caption fr-frames"><b>Before event:</b> 53 frames (0.00s – 3.31s) &nbsp;&middot;&nbsp; <b>Event:</b> 21 frames (3.31s – 4.62s) &nbsp;&middot;&nbsp; <b>After event:</b> 7 frames (4.62s – 5.06s)</p>
                 </div>
             </div>
@@ -1147,7 +1162,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I close the plastic container with the lid, change the color of the plastic bowl to deep forest green while preserving its shape and material texture. As soon as I wipe the countertop with the pink cloth, shift the scene to early evening twilight with dim blue ambient light outside the window and a soft glow from the room&#x27;s interior lighting. When I pick up the glass jar from the windowsill, add a small gray dove resting on the windowsill just behind the glass jar, tilting its head toward the bin. Right after I turn on the tap and run water into the sink, replace the smooth surface of the baking jar with a fine woven basket texture while maintaining its shape and size.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I close the plastic container with the lid, change the color of the plastic bowl to deep forest green while preserving its shape and material texture. As soon as I wipe the countertop with the pink cloth, shift the scene to early evening twilight with dim blue ambient light outside the window and a soft glow from the room&#x27;s interior lighting. When I pick up the glass jar from the windowsill, add a small gray dove resting on the windowsill just behind the glass jar, tilting its head toward the bin. Right after I turn on the tap and run water into the sink, replace the smooth surface of the baking jar with a fine woven basket texture while maintaining its shape and size.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I scoop the contents from the bowl</p>
                 <p class="caption fr-frames"><b>Before event:</b> 53 frames (0.00s – 3.31s) &nbsp;&middot;&nbsp; <b>Event:</b> 21 frames (3.31s – 4.62s) &nbsp;&middot;&nbsp; <b>After event:</b> 7 frames (4.62s – 5.06s)</p>
                 </div>
             </div>
@@ -1222,7 +1238,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Do overlaying the paper’s surface with a thin layer of cracked, dried mud texture, preserving its rectangular shape and the scattered shavings atop it, once pouring pencil waste onto the paper is done.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Do overlaying the paper’s surface with a thin layer of cracked, dried mud texture, preserving its rectangular shape and the scattered shavings atop it, once pouring pencil waste onto the paper is done.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pour pencil waste onto the paper</p>
                 <p class="caption fr-frames"><b>Before event:</b> 39 frames (0.00s – 2.44s) &nbsp;&middot;&nbsp; <b>Event:</b> 28 frames (2.44s – 4.19s) &nbsp;&middot;&nbsp; <b>After event:</b> 14 frames (4.19s – 5.06s)</p>
                 </div>
             </div>
@@ -1291,7 +1308,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I push the phone further away from the table&#x27;s edge, overlay the paper’s surface with a thin layer of cracked, dried mud texture, preserving its rectangular shape and the scattered shavings atop it.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I push the phone further away from the table&#x27;s edge, overlay the paper’s surface with a thin layer of cracked, dried mud texture, preserving its rectangular shape and the scattered shavings atop it.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pour pencil waste onto the paper</p>
                 <p class="caption fr-frames"><b>Before event:</b> 39 frames (0.00s – 2.44s) &nbsp;&middot;&nbsp; <b>Event:</b> 28 frames (2.44s – 4.19s) &nbsp;&middot;&nbsp; <b>After event:</b> 14 frames (4.19s – 5.06s)</p>
                 </div>
             </div>
@@ -1360,7 +1378,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Do overlaying the paper’s surface with a thin layer of cracked, dried mud texture, preserving its rectangular shape and the scattered shavings atop it, once pouring pencil waste onto the paper is done. Right after I touch the laptop sleeve on the adjacent table, transform the person into a cyborg with metallic arm enhancements, maintaining the same sitting pose and focus on the task.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Do overlaying the paper’s surface with a thin layer of cracked, dried mud texture, preserving its rectangular shape and the scattered shavings atop it, once pouring pencil waste onto the paper is done. Right after I touch the laptop sleeve on the adjacent table, transform the person into a cyborg with metallic arm enhancements, maintaining the same sitting pose and focus on the task.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pour pencil waste onto the paper</p>
                 <p class="caption fr-frames"><b>Before event:</b> 39 frames (0.00s – 2.44s) &nbsp;&middot;&nbsp; <b>Event:</b> 28 frames (2.44s – 4.19s) &nbsp;&middot;&nbsp; <b>After event:</b> 14 frames (4.19s – 5.06s)</p>
                 </div>
             </div>
@@ -1429,7 +1448,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I push the phone further away from the table&#x27;s edge, overlay the paper’s surface with a thin layer of cracked, dried mud texture, preserving its rectangular shape and the scattered shavings atop it. Right after I touch the laptop sleeve on the adjacent table, transform the person into a cyborg with metallic arm enhancements, maintaining the same sitting pose and focus on the task.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I push the phone further away from the table&#x27;s edge, overlay the paper’s surface with a thin layer of cracked, dried mud texture, preserving its rectangular shape and the scattered shavings atop it. Right after I touch the laptop sleeve on the adjacent table, transform the person into a cyborg with metallic arm enhancements, maintaining the same sitting pose and focus on the task.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pour pencil waste onto the paper</p>
                 <p class="caption fr-frames"><b>Before event:</b> 39 frames (0.00s – 2.44s) &nbsp;&middot;&nbsp; <b>Event:</b> 28 frames (2.44s – 4.19s) &nbsp;&middot;&nbsp; <b>After event:</b> 14 frames (4.19s – 5.06s)</p>
                 </div>
             </div>
@@ -1504,7 +1524,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Do transforming the embroidery fabric beneath my right hand into matte volcanic basalt with faint iron streaks, preserving every stitch and fold, once I put the string in my mouth is done.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Do transforming the embroidery fabric beneath my right hand into matte volcanic basalt with faint iron streaks, preserving every stitch and fold, once I put the string in my mouth is done.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the string in my mouth</p>
                 <p class="caption fr-frames"><b>Before event:</b> 3 frames (0.00s – 0.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 52 frames (0.19s – 3.44s) &nbsp;&middot;&nbsp; <b>After event:</b> 26 frames (3.44s – 5.06s)</p>
                 </div>
             </div>
@@ -1573,7 +1594,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I pick up the pair of scissors and cut the thread, transform the embroidery fabric beneath the right hand into matte volcanic basalt with faint iron streaks, preserving every stitch and fold.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I pick up the pair of scissors and cut the thread, transform the embroidery fabric beneath the right hand into matte volcanic basalt with faint iron streaks, preserving every stitch and fold.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the string in my mouth</p>
                 <p class="caption fr-frames"><b>Before event:</b> 3 frames (0.00s – 0.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 52 frames (0.19s – 3.44s) &nbsp;&middot;&nbsp; <b>After event:</b> 26 frames (3.44s – 5.06s)</p>
                 </div>
             </div>
@@ -1642,7 +1664,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Do transforming the embroidery fabric beneath my right hand into matte volcanic basalt with faint iron streaks, preserving every stitch and fold, once I put the string in my mouth is done. When I adjust the pattern book to the left side of the table, add a faint glow of warm sunlight spreading across the embroidered fabric, highlighting the thread details without altering the scene&#x27;s primary lighting.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Do transforming the embroidery fabric beneath my right hand into matte volcanic basalt with faint iron streaks, preserving every stitch and fold, once I put the string in my mouth is done. When I adjust the pattern book to the left side of the table, add a faint glow of warm sunlight spreading across the embroidered fabric, highlighting the thread details without altering the scene&#x27;s primary lighting.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the string in my mouth</p>
                 <p class="caption fr-frames"><b>Before event:</b> 3 frames (0.00s – 0.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 52 frames (0.19s – 3.44s) &nbsp;&middot;&nbsp; <b>After event:</b> 26 frames (3.44s – 5.06s)</p>
                 </div>
             </div>
@@ -1711,7 +1734,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I pick up the pair of scissors and cut the thread, transform the embroidery fabric beneath the right hand into matte volcanic basalt with faint iron streaks, preserving every stitch and fold. When I adjust the pattern book to the left side of the table, add a faint glow of warm sunlight spreading across the embroidered fabric, highlighting the thread details without altering the scene&#x27;s primary lighting.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I pick up the pair of scissors and cut the thread, transform the embroidery fabric beneath the right hand into matte volcanic basalt with faint iron streaks, preserving every stitch and fold. When I adjust the pattern book to the left side of the table, add a faint glow of warm sunlight spreading across the embroidered fabric, highlighting the thread details without altering the scene&#x27;s primary lighting.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the string in my mouth</p>
                 <p class="caption fr-frames"><b>Before event:</b> 3 frames (0.00s – 0.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 52 frames (0.19s – 3.44s) &nbsp;&middot;&nbsp; <b>After event:</b> 26 frames (3.44s – 5.06s)</p>
                 </div>
             </div>
@@ -1786,7 +1810,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I stop the lawn mower occurs, change my green t-shirt to a faded denim vest over a charcoal thermal shirt, with visible stitching and slight wear on the seams, while keeping my posture and the mower’s handlebars unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I stop the lawn mower occurs, change my green t-shirt to a faded denim vest over a charcoal thermal shirt, with visible stitching and slight wear on the seams, while keeping my posture and the mower’s handlebars unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I stop the lawn mower</p>
                 <p class="caption fr-frames"><b>Before event:</b> 10 frames (0.00s – 0.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 35 frames (0.62s – 2.81s) &nbsp;&middot;&nbsp; <b>After event:</b> 36 frames (2.81s – 5.06s)</p>
                 </div>
             </div>
@@ -1855,7 +1880,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I adjust my left boot on the footrest, change the green t-shirt to a faded denim vest over a charcoal thermal shirt, with visible stitching and slight wear on the seams, while keeping the posture and the mower’s handlebars unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I adjust my left boot on the footrest, change the green t-shirt to a faded denim vest over a charcoal thermal shirt, with visible stitching and slight wear on the seams, while keeping the posture and the mower’s handlebars unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I stop the lawn mower</p>
                 <p class="caption fr-frames"><b>Before event:</b> 10 frames (0.00s – 0.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 35 frames (0.62s – 2.81s) &nbsp;&middot;&nbsp; <b>After event:</b> 36 frames (2.81s – 5.06s)</p>
                 </div>
             </div>
@@ -1924,7 +1950,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I stop the lawn mower occurs, change my green t-shirt to a faded denim vest over a charcoal thermal shirt, with visible stitching and slight wear on the seams, while keeping my posture and the mower’s handlebars unchanged. Once I wipe my forehead with the back of my right hand, render the image in a watercolor style with soft edges and blended colors, keeping the composition and content unchanged. When I lean forward to look at the grass clippings in the collection bag, add a pair of dark-tinted sunglasses to the person&#x27;s face, resting on the nose and fitting the frame of the face. When I reach down to tighten the right handle grip, add a small plastic milk carton on the right side of the lawn mower seat, slightly tilted with shadows matching the lighting.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I stop the lawn mower occurs, change my green t-shirt to a faded denim vest over a charcoal thermal shirt, with visible stitching and slight wear on the seams, while keeping my posture and the mower’s handlebars unchanged. Once I wipe my forehead with the back of my right hand, render the image in a watercolor style with soft edges and blended colors, keeping the composition and content unchanged. When I lean forward to look at the grass clippings in the collection bag, add a pair of dark-tinted sunglasses to the person&#x27;s face, resting on the nose and fitting the frame of the face. When I reach down to tighten the right handle grip, add a small plastic milk carton on the right side of the lawn mower seat, slightly tilted with shadows matching the lighting.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I stop the lawn mower</p>
                 <p class="caption fr-frames"><b>Before event:</b> 10 frames (0.00s – 0.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 35 frames (0.62s – 2.81s) &nbsp;&middot;&nbsp; <b>After event:</b> 36 frames (2.81s – 5.06s)</p>
                 </div>
             </div>
@@ -1993,7 +2020,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I adjust my left boot on the footrest, change the green t-shirt to a faded denim vest over a charcoal thermal shirt, with visible stitching and slight wear on the seams, while keeping the posture and the mower’s handlebars unchanged. Once I wipe my forehead with the back of my right hand, render the image in a watercolor style with soft edges and blended colors, keeping the composition and content unchanged. When I lean forward to look at the grass clippings in the collection bag, add a pair of dark-tinted sunglasses to the person&#x27;s face, resting on the nose and fitting the frame of the face. When I reach down to tighten the right handle grip, add a small plastic milk carton on the right side of the lawn mower seat, slightly tilted with shadows matching the lighting.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I adjust my left boot on the footrest, change the green t-shirt to a faded denim vest over a charcoal thermal shirt, with visible stitching and slight wear on the seams, while keeping the posture and the mower’s handlebars unchanged. Once I wipe my forehead with the back of my right hand, render the image in a watercolor style with soft edges and blended colors, keeping the composition and content unchanged. When I lean forward to look at the grass clippings in the collection bag, add a pair of dark-tinted sunglasses to the person&#x27;s face, resting on the nose and fitting the frame of the face. When I reach down to tighten the right handle grip, add a small plastic milk carton on the right side of the lawn mower seat, slightly tilted with shadows matching the lighting.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I stop the lawn mower</p>
                 <p class="caption fr-frames"><b>Before event:</b> 10 frames (0.00s – 0.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 35 frames (0.62s – 2.81s) &nbsp;&middot;&nbsp; <b>After event:</b> 36 frames (2.81s – 5.06s)</p>
                 </div>
             </div>
@@ -2068,7 +2096,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I have finished touching my head with my left hand, replace the black object in my right hand with a dense coil of copper wire, matching the same grip and curve.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I have finished touching my head with my left hand, replace the black object in my right hand with a dense coil of copper wire, matching the same grip and curve.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I touch my head with my left hand</p>
                 <p class="caption fr-frames"><b>Before event:</b> 35 frames (0.00s – 2.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 40 frames (2.19s – 4.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 6 frames (4.69s – 5.06s)</p>
                 </div>
             </div>
@@ -2137,7 +2166,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I wipe the pen on my shirt sleeve, replace the black object in your right hand with a dense coil of copper wire, matching the same grip and curve.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I wipe the pen on my shirt sleeve, replace the black object in your right hand with a dense coil of copper wire, matching the same grip and curve.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I touch my head with my left hand</p>
                 <p class="caption fr-frames"><b>Before event:</b> 35 frames (0.00s – 2.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 40 frames (2.19s – 4.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 6 frames (4.69s – 5.06s)</p>
                 </div>
             </div>
@@ -2206,7 +2236,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I shift the black CAD drawing on the station table, change the lighting to simulate overcast weather, with a cool blue ambient glow spreading across the room and soft shadows on the floor. Once I have finished touching my head with my left hand, replace the black object in my right hand with a dense coil of copper wire, matching the same grip and curve.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I shift the black CAD drawing on the station table, change the lighting to simulate overcast weather, with a cool blue ambient glow spreading across the room and soft shadows on the floor. Once I have finished touching my head with my left hand, replace the black object in my right hand with a dense coil of copper wire, matching the same grip and curve.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I touch my head with my left hand</p>
                 <p class="caption fr-frames"><b>Before event:</b> 35 frames (0.00s – 2.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 40 frames (2.19s – 4.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 6 frames (4.69s – 5.06s)</p>
                 </div>
             </div>
@@ -2275,7 +2306,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I shift the black CAD drawing on the station table, change the lighting to simulate overcast weather, with a cool blue ambient glow spreading across the room and soft shadows on the floor. Right after I wipe the pen on my shirt sleeve, replace the black object in your right hand with a dense coil of copper wire, matching the same grip and curve.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I shift the black CAD drawing on the station table, change the lighting to simulate overcast weather, with a cool blue ambient glow spreading across the room and soft shadows on the floor. Right after I wipe the pen on my shirt sleeve, replace the black object in your right hand with a dense coil of copper wire, matching the same grip and curve.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I touch my head with my left hand</p>
                 <p class="caption fr-frames"><b>Before event:</b> 35 frames (0.00s – 2.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 40 frames (2.19s – 4.69s) &nbsp;&middot;&nbsp; <b>After event:</b> 6 frames (4.69s – 5.06s)</p>
                 </div>
             </div>
@@ -2350,7 +2382,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I put the iron box on the ironing board is completed, add a thin copper bangle with tiny engraved leaves around my left wrist, catching the light just above the red string.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I put the iron box on the ironing board is completed, add a thin copper bangle with tiny engraved leaves around my left wrist, catching the light just above the red string.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the iron box on the ironing board</p>
                 <p class="caption fr-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 41 frames (0.50s – 3.06s) &nbsp;&middot;&nbsp; <b>After event:</b> 32 frames (3.06s – 5.06s)</p>
                 </div>
             </div>
@@ -2419,7 +2452,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Immediately after I pick up the spray bottle and mist the cloth, add a thin copper bangle with tiny engraved leaves around the left wrist, catching the light just above the red string.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Immediately after I pick up the spray bottle and mist the cloth, add a thin copper bangle with tiny engraved leaves around the left wrist, catching the light just above the red string.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the iron box on the ironing board</p>
                 <p class="caption fr-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 41 frames (0.50s – 3.06s) &nbsp;&middot;&nbsp; <b>After event:</b> 32 frames (3.06s – 5.06s)</p>
                 </div>
             </div>
@@ -2488,7 +2522,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I put the iron box on the ironing board is completed, add a thin copper bangle with tiny engraved leaves around my left wrist, catching the light just above the red string. Once I adjust the position of the iron&#x27;s power cord on the table, add subtle motion blur around the iron as it moves across the fabric, indicating a smooth gliding motion.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I put the iron box on the ironing board is completed, add a thin copper bangle with tiny engraved leaves around my left wrist, catching the light just above the red string. Once I adjust the position of the iron&#x27;s power cord on the table, add subtle motion blur around the iron as it moves across the fabric, indicating a smooth gliding motion.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the iron box on the ironing board</p>
                 <p class="caption fr-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 41 frames (0.50s – 3.06s) &nbsp;&middot;&nbsp; <b>After event:</b> 32 frames (3.06s – 5.06s)</p>
                 </div>
             </div>
@@ -2557,7 +2592,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Immediately after I pick up the spray bottle and mist the cloth, add a thin copper bangle with tiny engraved leaves around the left wrist, catching the light just above the red string. Once I adjust the position of the iron&#x27;s power cord on the table, add subtle motion blur around the iron as it moves across the fabric, indicating a smooth gliding motion.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Immediately after I pick up the spray bottle and mist the cloth, add a thin copper bangle with tiny engraved leaves around the left wrist, catching the light just above the red string. Once I adjust the position of the iron&#x27;s power cord on the table, add subtle motion blur around the iron as it moves across the fabric, indicating a smooth gliding motion.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the iron box on the ironing board</p>
                 <p class="caption fr-frames"><b>Before event:</b> 8 frames (0.00s – 0.50s) &nbsp;&middot;&nbsp; <b>Event:</b> 41 frames (0.50s – 3.06s) &nbsp;&middot;&nbsp; <b>After event:</b> 32 frames (3.06s – 5.06s)</p>
                 </div>
             </div>
@@ -2632,7 +2668,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I put the card on the board, make the white game controller on the table vanish cleanly without altering the magazine or the smartphone beside it.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I put the card on the board, make the white game controller on the table vanish cleanly without altering the magazine or the smartphone beside it.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the card on the board</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 58 frames (0.25s – 3.88s) &nbsp;&middot;&nbsp; <b>After event:</b> 19 frames (3.88s – 5.06s)</p>
                 </div>
             </div>
@@ -2701,7 +2738,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I shift the mug to the edge of the table, make the white game controller on the table vanish cleanly without altering the magazine or the smartphone beside it.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I shift the mug to the edge of the table, make the white game controller on the table vanish cleanly without altering the magazine or the smartphone beside it.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the card on the board</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 58 frames (0.25s – 3.88s) &nbsp;&middot;&nbsp; <b>After event:</b> 19 frames (3.88s – 5.06s)</p>
                 </div>
             </div>
@@ -2770,7 +2808,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I place my phone on the magazine stack, add a small blue balloon floating above the board game, tethered to the table edge. When I flip the game spinner to check the result, restyle the entire scene as a watercolor painting with soft edges and blended colors, preserving all objects and layout. Right after I put the card on the board, make the white game controller on the table vanish cleanly without altering the magazine or the smartphone beside it.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I place my phone on the magazine stack, add a small blue balloon floating above the board game, tethered to the table edge. When I flip the game spinner to check the result, restyle the entire scene as a watercolor painting with soft edges and blended colors, preserving all objects and layout. Right after I put the card on the board, make the white game controller on the table vanish cleanly without altering the magazine or the smartphone beside it.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the card on the board</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 58 frames (0.25s – 3.88s) &nbsp;&middot;&nbsp; <b>After event:</b> 19 frames (3.88s – 5.06s)</p>
                 </div>
             </div>
@@ -2839,7 +2878,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I place my phone on the magazine stack, add a small blue balloon floating above the board game, tethered to the table edge. When I flip the game spinner to check the result, restyle the entire scene as a watercolor painting with soft edges and blended colors, preserving all objects and layout. Once I shift the mug to the edge of the table, make the white game controller on the table vanish cleanly without altering the magazine or the smartphone beside it.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I place my phone on the magazine stack, add a small blue balloon floating above the board game, tethered to the table edge. When I flip the game spinner to check the result, restyle the entire scene as a watercolor painting with soft edges and blended colors, preserving all objects and layout. Once I shift the mug to the edge of the table, make the white game controller on the table vanish cleanly without altering the magazine or the smartphone beside it.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I put the card on the board</p>
                 <p class="caption fr-frames"><b>Before event:</b> 4 frames (0.00s – 0.25s) &nbsp;&middot;&nbsp; <b>Event:</b> 58 frames (0.25s – 3.88s) &nbsp;&middot;&nbsp; <b>After event:</b> 19 frames (3.88s – 5.06s)</p>
                 </div>
             </div>
@@ -2914,7 +2954,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Upon scrubbing the frame of wood, place a chipped ceramic mug filled with water and a wiping cloth on the tiled patio floor near my left foot, matching the ambient light and shadows.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Upon scrubbing the frame of wood, place a chipped ceramic mug filled with water and a wiping cloth on the tiled patio floor near my left foot, matching the ambient light and shadows.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I scrub the frame of wood</p>
                 <p class="caption fr-frames"><b>Before event:</b> 0 frames (0.00s – 0.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 42 frames (0.00s – 2.62s) &nbsp;&middot;&nbsp; <b>After event:</b> 39 frames (2.62s – 5.06s)</p>
                 </div>
             </div>
@@ -2983,7 +3024,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I adjust my shoe lace while standing on the tiled floor, place a chipped ceramic mug filled with water and a wiping cloth on the tiled patio floor near the left foot, matching the ambient light and shadows.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I adjust my shoe lace while standing on the tiled floor, place a chipped ceramic mug filled with water and a wiping cloth on the tiled patio floor near the left foot, matching the ambient light and shadows.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I scrub the frame of wood</p>
                 <p class="caption fr-frames"><b>Before event:</b> 0 frames (0.00s – 0.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 42 frames (0.00s – 2.62s) &nbsp;&middot;&nbsp; <b>After event:</b> 39 frames (2.62s – 5.06s)</p>
                 </div>
             </div>
@@ -3052,7 +3094,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Upon scrubbing the frame of wood, place a chipped ceramic mug filled with water and a wiping cloth on the tiled patio floor near my left foot, matching the ambient light and shadows. When I pull a green leaf from the bush to the side of the planter, add a subtle afterimage trail behind the left hand, suggesting rapid movement during sanding.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Upon scrubbing the frame of wood, place a chipped ceramic mug filled with water and a wiping cloth on the tiled patio floor near my left foot, matching the ambient light and shadows. When I pull a green leaf from the bush to the side of the planter, add a subtle afterimage trail behind the left hand, suggesting rapid movement during sanding.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I scrub the frame of wood</p>
                 <p class="caption fr-frames"><b>Before event:</b> 0 frames (0.00s – 0.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 42 frames (0.00s – 2.62s) &nbsp;&middot;&nbsp; <b>After event:</b> 39 frames (2.62s – 5.06s)</p>
                 </div>
             </div>
@@ -3121,7 +3164,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I adjust my shoe lace while standing on the tiled floor, place a chipped ceramic mug filled with water and a wiping cloth on the tiled patio floor near the left foot, matching the ambient light and shadows. When I pull a green leaf from the bush to the side of the planter, add a subtle afterimage trail behind the left hand, suggesting rapid movement during sanding.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I adjust my shoe lace while standing on the tiled floor, place a chipped ceramic mug filled with water and a wiping cloth on the tiled patio floor near the left foot, matching the ambient light and shadows. When I pull a green leaf from the bush to the side of the planter, add a subtle afterimage trail behind the left hand, suggesting rapid movement during sanding.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I scrub the frame of wood</p>
                 <p class="caption fr-frames"><b>Before event:</b> 0 frames (0.00s – 0.00s) &nbsp;&middot;&nbsp; <b>Event:</b> 42 frames (0.00s – 2.62s) &nbsp;&middot;&nbsp; <b>After event:</b> 39 frames (2.62s – 5.06s)</p>
                 </div>
             </div>
@@ -3196,7 +3240,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I have finished picking nuts from the bowl in the tray with both hands into the bowl on my lap, add a single brass knuckle ring on my right index finger that catches the window light with subtle reflections and casts a soft shadow on my palm.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I have finished picking nuts from the bowl in the tray with both hands into the bowl on my lap, add a single brass knuckle ring on my right index finger that catches the window light with subtle reflections and casts a soft shadow on my palm.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick nuts from the bowl in the tray with both hands into the bowl on my lap.</p>
                 <p class="caption fr-frames"><b>Before event:</b> 7 frames (0.00s – 0.44s) &nbsp;&middot;&nbsp; <b>Event:</b> 46 frames (0.44s – 3.31s) &nbsp;&middot;&nbsp; <b>After event:</b> 28 frames (3.31s – 5.06s)</p>
                 </div>
             </div>
@@ -3265,7 +3310,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I move the laptop slightly to the left with my left hand, add a single brass knuckle ring on the right index finger that catches the window light with subtle reflections and casts a soft shadow on the palm.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I move the laptop slightly to the left with my left hand, add a single brass knuckle ring on the right index finger that catches the window light with subtle reflections and casts a soft shadow on the palm.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick nuts from the bowl in the tray with both hands into the bowl on my lap.</p>
                 <p class="caption fr-frames"><b>Before event:</b> 7 frames (0.00s – 0.44s) &nbsp;&middot;&nbsp; <b>Event:</b> 46 frames (0.44s – 3.31s) &nbsp;&middot;&nbsp; <b>After event:</b> 28 frames (3.31s – 5.06s)</p>
                 </div>
             </div>
@@ -3334,7 +3380,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once I have finished picking nuts from the bowl in the tray with both hands into the bowl on my lap, add a single brass knuckle ring on my right index finger that catches the window light with subtle reflections and casts a soft shadow on my palm. When I adjust the teapot on the tray by rotating it with my right hand, add a single brass knuckle ring on the right index finger that catches the window light with subtle reflections and casts a soft shadow on the palm. Immediately after I roll the edge of the white tablecloth with my thumb and forefinger, insert a small, glowing fairy with translucent wings hovering beside the left hand, her light illuminating the contents of the bowl slightly.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once I have finished picking nuts from the bowl in the tray with both hands into the bowl on my lap, add a single brass knuckle ring on my right index finger that catches the window light with subtle reflections and casts a soft shadow on my palm. When I adjust the teapot on the tray by rotating it with my right hand, add a single brass knuckle ring on the right index finger that catches the window light with subtle reflections and casts a soft shadow on the palm. Immediately after I roll the edge of the white tablecloth with my thumb and forefinger, insert a small, glowing fairy with translucent wings hovering beside the left hand, her light illuminating the contents of the bowl slightly.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick nuts from the bowl in the tray with both hands into the bowl on my lap.</p>
                 <p class="caption fr-frames"><b>Before event:</b> 7 frames (0.00s – 0.44s) &nbsp;&middot;&nbsp; <b>Event:</b> 46 frames (0.44s – 3.31s) &nbsp;&middot;&nbsp; <b>After event:</b> 28 frames (3.31s – 5.06s)</p>
                 </div>
             </div>
@@ -3403,7 +3450,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I move the laptop slightly to the left with my left hand, add a single brass knuckle ring on the right index finger that catches the window light with subtle reflections and casts a soft shadow on the palm. When I adjust the teapot on the tray by rotating it with my right hand, add a single brass knuckle ring on the right index finger that catches the window light with subtle reflections and casts a soft shadow on the palm. Immediately after I roll the edge of the white tablecloth with my thumb and forefinger, insert a small, glowing fairy with translucent wings hovering beside the left hand, her light illuminating the contents of the bowl slightly.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I move the laptop slightly to the left with my left hand, add a single brass knuckle ring on the right index finger that catches the window light with subtle reflections and casts a soft shadow on the palm. When I adjust the teapot on the tray by rotating it with my right hand, add a single brass knuckle ring on the right index finger that catches the window light with subtle reflections and casts a soft shadow on the palm. Immediately after I roll the edge of the white tablecloth with my thumb and forefinger, insert a small, glowing fairy with translucent wings hovering beside the left hand, her light illuminating the contents of the bowl slightly.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick nuts from the bowl in the tray with both hands into the bowl on my lap.</p>
                 <p class="caption fr-frames"><b>Before event:</b> 7 frames (0.00s – 0.44s) &nbsp;&middot;&nbsp; <b>Event:</b> 46 frames (0.44s – 3.31s) &nbsp;&middot;&nbsp; <b>After event:</b> 28 frames (3.31s – 5.06s)</p>
                 </div>
             </div>
@@ -3478,7 +3526,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I pick up a cloth, transform my arms and torso into a steampunk mechanic with brass plating and visible gear joints, while keeping my stance and the tools around me unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I pick up a cloth, transform my arms and torso into a steampunk mechanic with brass plating and visible gear joints, while keeping my stance and the tools around me unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick up a cloth</p>
                 <p class="caption fr-frames"><b>Before event:</b> 3 frames (0.00s – 0.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 27 frames (0.19s – 1.88s) &nbsp;&middot;&nbsp; <b>After event:</b> 51 frames (1.88s – 5.06s)</p>
                 </div>
             </div>
@@ -3547,7 +3596,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> After I wipe the surface of the workbench with the cloth, transform the arms and torso into a steampunk mechanic with brass plating and visible gear joints, while keeping the stance and the tools around unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> After I wipe the surface of the workbench with the cloth, transform the arms and torso into a steampunk mechanic with brass plating and visible gear joints, while keeping the stance and the tools around unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick up a cloth</p>
                 <p class="caption fr-frames"><b>Before event:</b> 3 frames (0.00s – 0.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 27 frames (0.19s – 1.88s) &nbsp;&middot;&nbsp; <b>After event:</b> 51 frames (1.88s – 5.06s)</p>
                 </div>
             </div>
@@ -3616,7 +3666,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I adjust the position of the yellow plastic container on the barrel, add a small tabby cat walking into the frame from the right, sniffing at the black barrel before pausing near the person&#x27;s foot. Right after I pick up a cloth, transform my arms and torso into a steampunk mechanic with brass plating and visible gear joints, while keeping my stance and the tools around me unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I adjust the position of the yellow plastic container on the barrel, add a small tabby cat walking into the frame from the right, sniffing at the black barrel before pausing near the person&#x27;s foot. Right after I pick up a cloth, transform my arms and torso into a steampunk mechanic with brass plating and visible gear joints, while keeping my stance and the tools around me unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick up a cloth</p>
                 <p class="caption fr-frames"><b>Before event:</b> 3 frames (0.00s – 0.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 27 frames (0.19s – 1.88s) &nbsp;&middot;&nbsp; <b>After event:</b> 51 frames (1.88s – 5.06s)</p>
                 </div>
             </div>
@@ -3685,7 +3736,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I adjust the position of the yellow plastic container on the barrel, add a small tabby cat walking into the frame from the right, sniffing at the black barrel before pausing near the person&#x27;s foot. After I wipe the surface of the workbench with the cloth, transform the arms and torso into a steampunk mechanic with brass plating and visible gear joints, while keeping the stance and the tools around unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I adjust the position of the yellow plastic container on the barrel, add a small tabby cat walking into the frame from the right, sniffing at the black barrel before pausing near the person&#x27;s foot. After I wipe the surface of the workbench with the cloth, transform the arms and torso into a steampunk mechanic with brass plating and visible gear joints, while keeping the stance and the tools around unchanged.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick up a cloth</p>
                 <p class="caption fr-frames"><b>Before event:</b> 3 frames (0.00s – 0.19s) &nbsp;&middot;&nbsp; <b>Event:</b> 27 frames (0.19s – 1.88s) &nbsp;&middot;&nbsp; <b>After event:</b> 51 frames (1.88s – 5.06s)</p>
                 </div>
             </div>
@@ -3760,7 +3812,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I pick up a packet of vegetables, transform the plastic packet into woven bamboo strips tied with twine, maintaining its shape and position in my hands.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I pick up a packet of vegetables, transform the plastic packet into woven bamboo strips tied with twine, maintaining its shape and position in my hands.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick up a packet of vegetables</p>
                 <p class="caption fr-frames"><b>Before event:</b> 10 frames (0.00s – 0.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 60 frames (0.62s – 4.38s) &nbsp;&middot;&nbsp; <b>After event:</b> 11 frames (4.38s – 5.06s)</p>
                 </div>
             </div>
@@ -3829,7 +3882,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Immediately after I pour oil from the bottle into the frying pan, transform the plastic packet into woven bamboo strips tied with twine, maintaining its shape and position in my hands.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Immediately after I pour oil from the bottle into the frying pan, transform the plastic packet into woven bamboo strips tied with twine, maintaining its shape and position in my hands.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick up a packet of vegetables</p>
                 <p class="caption fr-frames"><b>Before event:</b> 10 frames (0.00s – 0.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 60 frames (0.62s – 4.38s) &nbsp;&middot;&nbsp; <b>After event:</b> 11 frames (4.38s – 5.06s)</p>
                 </div>
             </div>
@@ -3898,7 +3952,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I open the container of rice on the countertop, change the weather to light drizzle outside the kitchen window, with faint moisture appearing on the glass. Right after I pick up a packet of vegetables, transform the plastic packet into woven bamboo strips tied with twine, maintaining its shape and position in my hands.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I open the container of rice on the countertop, change the weather to light drizzle outside the kitchen window, with faint moisture appearing on the glass. Right after I pick up a packet of vegetables, transform the plastic packet into woven bamboo strips tied with twine, maintaining its shape and position in my hands.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick up a packet of vegetables</p>
                 <p class="caption fr-frames"><b>Before event:</b> 10 frames (0.00s – 0.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 60 frames (0.62s – 4.38s) &nbsp;&middot;&nbsp; <b>After event:</b> 11 frames (4.38s – 5.06s)</p>
                 </div>
             </div>
@@ -3967,7 +4022,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I open the container of rice on the countertop, change the weather to light drizzle outside the kitchen window, with faint moisture appearing on the glass. Immediately after I pour oil from the bottle into the frying pan, transform the plastic packet into woven bamboo strips tied with twine, maintaining its shape and position in my hands.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I open the container of rice on the countertop, change the weather to light drizzle outside the kitchen window, with faint moisture appearing on the glass. Immediately after I pour oil from the bottle into the frying pan, transform the plastic packet into woven bamboo strips tied with twine, maintaining its shape and position in my hands.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I pick up a packet of vegetables</p>
                 <p class="caption fr-frames"><b>Before event:</b> 10 frames (0.00s – 0.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 60 frames (0.62s – 4.38s) &nbsp;&middot;&nbsp; <b>After event:</b> 11 frames (4.38s – 5.06s)</p>
                 </div>
             </div>
@@ -4042,7 +4098,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Once you detect I place the wrench on the table, transform me into a steampunk tinkerer with brass-gear gauntlets and copper-plated goggles, maintaining my exact posture and hand position.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Once you detect I place the wrench on the table, transform me into a steampunk tinkerer with brass-gear gauntlets and copper-plated goggles, maintaining my exact posture and hand position.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I place the wrench on the table</p>
                 <p class="caption fr-frames"><b>Before event:</b> 26 frames (0.00s – 1.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 18 frames (1.62s – 2.75s) &nbsp;&middot;&nbsp; <b>After event:</b> 37 frames (2.75s – 5.06s)</p>
                 </div>
             </div>
@@ -4111,7 +4168,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> Right after I pick up the green bottle from the workbench, transform into a steampunk tinkerer with brass-gear gauntlets and copper-plated goggles, maintaining the exact posture and hand position.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> Right after I pick up the green bottle from the workbench, transform into a steampunk tinkerer with brass-gear gauntlets and copper-plated goggles, maintaining the exact posture and hand position.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I place the wrench on the table</p>
                 <p class="caption fr-frames"><b>Before event:</b> 26 frames (0.00s – 1.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 18 frames (1.62s – 2.75s) &nbsp;&middot;&nbsp; <b>After event:</b> 37 frames (2.75s – 5.06s)</p>
                 </div>
             </div>
@@ -4180,7 +4238,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I close the blue工具柜 drawer with my knee, replace the wrench in the hand with a brass-handled screwdriver of the same size and orientation. Once you detect I place the wrench on the table, transform me into a steampunk tinkerer with brass-gear gauntlets and copper-plated goggles, maintaining my exact posture and hand position. When I adjust the laptop screen on the desk, change the lighting to a warm amber glow with soft shadows, enhancing the workshop’s vintage ambiance.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I close the blue工具柜 drawer with my knee, replace the wrench in the hand with a brass-handled screwdriver of the same size and orientation. Once you detect I place the wrench on the table, transform me into a steampunk tinkerer with brass-gear gauntlets and copper-plated goggles, maintaining my exact posture and hand position. When I adjust the laptop screen on the desk, change the lighting to a warm amber glow with soft shadows, enhancing the workshop’s vintage ambiance.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I place the wrench on the table</p>
                 <p class="caption fr-frames"><b>Before event:</b> 26 frames (0.00s – 1.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 18 frames (1.62s – 2.75s) &nbsp;&middot;&nbsp; <b>After event:</b> 37 frames (2.75s – 5.06s)</p>
                 </div>
             </div>
@@ -4249,7 +4308,8 @@
                 </div>
                 </div>
                 <div class="fr-mode-meta">
-                    <p class="fr-mode-prompt"><b>Event prompt:</b> When I close the blue工具柜 drawer with my knee, replace the wrench in the hand with a brass-handled screwdriver of the same size and orientation. Right after I pick up the green bottle from the workbench, transform into a steampunk tinkerer with brass-gear gauntlets and copper-plated goggles, maintaining the exact posture and hand position. When I adjust the laptop screen on the desk, change the lighting to a warm amber glow with soft shadows, enhancing the workshop’s vintage ambiance.</p>
+                    <p class="fr-mode-prompt"><b>Event conditioned edit prompt:</b> When I close the blue工具柜 drawer with my knee, replace the wrench in the hand with a brass-handled screwdriver of the same size and orientation. Right after I pick up the green bottle from the workbench, transform into a steampunk tinkerer with brass-gear gauntlets and copper-plated goggles, maintaining the exact posture and hand position. When I adjust the laptop screen on the desk, change the lighting to a warm amber glow with soft shadows, enhancing the workshop’s vintage ambiance.</p>
+                    <p class="fr-mode-prompt"><b>Event:</b> I place the wrench on the table</p>
                 <p class="caption fr-frames"><b>Before event:</b> 26 frames (0.00s – 1.62s) &nbsp;&middot;&nbsp; <b>Event:</b> 18 frames (1.62s – 2.75s) &nbsp;&middot;&nbsp; <b>After event:</b> 37 frames (2.75s – 5.06s)</p>
                 </div>
             </div>
